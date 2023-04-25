@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 1;
+      }
+      .header h1 {
+        font-size: 4em;
+        margin: 0;
+      }
+      .header p {
+        font-size: 1.5em;
+        margin: 0;
+      }
+      .profile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: url("path/to/profile-picture.jpg") center center no-repeat;
+        background-size: cover;
+      }
+      .blog {
+        margin-top: 200px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .post {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        background: #f0f0f0;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Jack Clarke</h1>
+      <p>Welcome to my website! Here, I'll be sharing my progress on game development, coding, and other tech projects that I'm currently working on.</p>
+    </div>
+    <div class="profile"></div>
+    <div class="blog">
+      <div class="post">
+        <h2>Blog Post Title 1</h2>
+        <p>Blog post content goes here...</p>
+      </div>
+      <div class="post">
+        <h2>Blog Post Title 2</h2>
+        <p>Blog post content goes here...</p>
+      </div>
+      <div class="post">
+        <h2>Blog Post Title 3</h2>
+        <p>Blog post content goes here...</p>
+      </div>
+      <!-- Add more posts as needed -->
+    </div>
+    <img src="path/to/header-image.jpg" alt="Header Image" style="width: 100%; height: auto;">
+  </body>
+</html>
