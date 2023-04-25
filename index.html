@@ -34,24 +34,22 @@
       }
       
       .blog {
-        margin-top: 50px;
+        margin-top: -50px;
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: 80%;
+        margin-left: 10%;
+        font-size: 1.2em;
       }
       
       .post {
-        width: calc(50% - 40px);
-        margin: 20px;
+        width: calc(50% - 20px);
+        margin: 10px;
         background: #f0f0f0;
-        padding: 40px;
+        padding: 20px;
         box-sizing: border-box;
-        text-align: center;
-      }
-      
-      .post h2 {
-        margin-top: 0;
       }
     </style>
   </head>
@@ -63,12 +61,11 @@
     <div id="header2">
       <p>Welcome to my blog! Here, I'll be sharing my progress on game development, coding, and other tech projects that I'm currently working on.</p>
     </div>
-    
     <div class="blog">
       <div class="post">
         <h2>Current State of the Game - 24/04/2023</h2>
         <p>In this post I thought I'd discuss the game in its current state, what I'm working on now, and what's next.
-At this moment in time the game has a small test area with trees, water, and a house. There is a playable character who is fully animated and can be controlled by the user. There is also a fully animated NPC wizard who patrols the test area randomly and has a single line of dialogue if the user interacts with him. The house has an animated door that opens when the player is in range and the player sprite has a fade animation to make it appear that the player has entered the building. 
-For the input controls I've modified a touch screen thumbstick asset to make it function as a D-Pad on the left side of the screen and I have an action button on the right side of the screen which is currently used to interact with the NPC and trigger dialogue.
-Currently I'm working on implementing a dialogue mechanic into the game. I attempted to do this myself and managed to trigger a dialogue box and text to be displayed when the player interacts with the NPC, but this wouldn't work for multiple lines of dialogue with multiple characters. So, I'm going to be following a far more advanced YouTube tutorial which is more fit for purpose. 
-As for the future of the game and what I'd like to achieve, I'd like to create a functioning game with a basic storyline, multiple levels, more characters, weapons
+          At this moment in time the game has a small test area with trees, water, and a house. There is a playable character who is fully animated and can be controlled by the user. There is also a fully animated NPC wizard who patrols the test area randomly and has a single line of dialogue if the user interacts with him. The house has an animated door that opens when the player is in range and the player sprite has a fade animation to make it appear that the player has entered the building. 
+          For the input controls I've modified a touch screen thumbstick asset to make it function as a D-Pad on the left side of the screen and I have an action button on the right side of the screen which is currently used to interact with the NPC and trigger dialogue.
+          Currently I'm working on implementing a dialogue mechanic into the game. I attempted to do this myself and managed to trigger a dialogue box and text to be displayed when the player interacts with the NPC, but this wouldn't work for multiple lines of dialogue with multiple characters. So, I'm going to be following a far more advanced YouTube tutorial which is more fit for purpose. 
+          As for the future of the game and what I'd like to achieve, I'd like to create a functioning game with a basic storyline, multiple levels, more characters, weapons
