@@ -9,52 +9,32 @@
         padding: 0;
         font-family: Arial, sans-serif;
         background-color: #333333;
-        }
+      }
       
-      .header {
+      #header1 {
         position: absolute;
-        top: 25%;
+        top: 20px;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0);
         text-align: center;
         color: white;
         z-index: 1;
+        font-size: 2.5em;
       }
       
-      .header h1 {
-        font-size: 4em;
-        margin: 0;
-      }
-      
-      .header p {
-        font-size: 1.5em;
-        margin: 0;
-      }
-      
-      .second-header {
+      #header2 {
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, 0);
         text-align: center;
         color: white;
         z-index: 1;
-        font-size: 2em;
-        margin-bottom: 2.5in;
-      }
-      
-      .profile {
-        position: absolute;
-        top: 10%;
-        left: 3%;
-        width: 100px;
-        height: 100px;
-        background: url("images/Website_logo.png") center center no-repeat;
-        background-size: cover;
+        font-size: 1.5em;
       }
       
       .blog {
-        margin-top: 600px;
+        margin-top: 430px;
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
@@ -67,24 +47,15 @@
         padding: 20px;
         box-sizing: border-box;
       }
-      
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      
     </style>
   </head>
   <body>
-    <img src="images/Website_wallpaper.png" alt="Header Image">
-    <div class="header">
-      <img src="" alt="">
+    <img src="images/Website_wallpaper.png" alt="Header Image" style="width: 100%; height: auto;">
+    <div id="header1">
       <h1>Jack Clarke</h1>
-      <p>Game Developer and Tech Enthusiast</p>
     </div>
-    <div class="profile"></div>
-    <div class="second-header">
-      <h2>Welcome to my website!</h2>
+    <div id="header2">
+      <p>Welcome to my website! Here, I'll be sharing my progress on game development, coding, and other tech projects that I'm currently working on.</p>
     </div>
     <div class="blog">
       <div class="post">
@@ -97,7 +68,8 @@
       </div>
       <div class="post">
         <h2>Blog Post Title 3</h2>
-        <p>In my first post I wanted to outline my intentions with the blog and discuss my current project. 
+        <p>24/04/2023
+          In my first post I wanted to outline my intentions with the blog and discuss my current project. 
 My aim is to collate my work into an accessible portfolio-style journal that could be presented 
 to potential employers and to keep track of my progress for personal development. Prior to starting 
 this blog my personal projects have gone undocumented and in some cases forgotten.
