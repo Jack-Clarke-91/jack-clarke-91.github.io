@@ -9,54 +9,57 @@
         padding: 0;
         font-family: Arial, sans-serif;
         background-color: #333333;
-      }
+        }
       
-      #header1 {
+      .header {
         position: absolute;
-        top: 40px;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        color: black;
+        color: white;
         z-index: 1;
       }
-      #header1 h1 {
-        font-size: 3em;
+      
+      .header h1 {
+        font-size: 4em;
         margin: 0;
       }
       
-      #header2 {
+      .header p {
+        font-size: 1.5em;
+        margin: 0;
+      }
+      
+      .second-header {
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: translate(-50%, 50%);
+        transform: translateX(-50%);
         text-align: center;
-        color: black;
+        color: white;
         z-index: 1;
-      }
-      #header2 h1 {
         font-size: 2em;
-        margin: 0;
-      }
-      #header2 p {
-        font-size: 1em;
-        margin: 0;
+        margin-bottom: 2.5in;
       }
       
-      #background {
-        position: relative;
-        height: 400px;
-        width: 100%;
-        background: url("images/Website_wallpaper.png") center center no-repeat;
+      .profile {
+        position: absolute;
+        top: 10%;
+        left: 3%;
+        width: 100px;
+        height: 100px;
+        background: url("images/Website_logo.png") center center no-repeat;
         background-size: cover;
       }
       
       .blog {
-        margin-top: 50px;
+        margin-top: 600px;
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
       }
+      
       .post {
         width: calc(33.33% - 20px);
         margin: 10px;
@@ -64,17 +67,24 @@
         padding: 20px;
         box-sizing: border-box;
       }
+      
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      
     </style>
   </head>
   <body>
-    <div id="background">
-      <div id="header1">
-        <h1>Jack Clarke</h1>
-      </div>
+    <img src="images/Website_wallpaper.png" alt="Header Image">
+    <div class="header">
+      <img src="" alt="">
+      <h1>Jack Clarke</h1>
+      <p>Game Developer and Tech Enthusiast</p>
     </div>
-    <div id="header2">
-      <h1>Welcome to my website!</h1>
-      <p>Here, I'll be sharing my progress on game development, coding, and other tech projects that I'm currently working on.</p>
+    <div class="profile"></div>
+    <div class="second-header">
+      <h2>Welcome to my website!</h2>
     </div>
     <div class="blog">
       <div class="post">
@@ -87,7 +97,25 @@
       </div>
       <div class="post">
         <h2>Blog Post Title 3</h2>
-        <p>Blog post content goes here...</p>
+        <p>In my first post I wanted to outline my intentions with the blog and discuss my current project. 
+My aim is to collate my work into an accessible portfolio-style journal that could be presented 
+to potential employers and to keep track of my progress for personal development. Prior to starting 
+this blog my personal projects have gone undocumented and in some cases forgotten.
+
+For my current project I am developing a 2D top-down RPG game for Android using Unity game engine 
+for the game development and Aseprite for the sprite and asset design. I always attempt to write as 
+much of the code as I can myself but when I need help I've been using a combination of: YouTube tutorials, 
+google, and ChatGPT. I want to be completely forthcoming that the code in the game is an amalgamation of my code, 
+tutorials, and ChatGPT. The game is a personal learning project to further my understanding of programming and 
+game development and I currently have no intentions of releasing it on the Play Store. 
+
+I hope to upload some screenshots of the game later today and keep the blog updated as often as I can. 
+Ideally I'd like to update the blog each time I work on the game, but due to family commitments and uni 
+this is near impossible, so I may do a bulk update with multiple posts to keep the blog up-to-date.
+
+Thanks for reading,
+
+Jack</p>
       </div>
       <!-- Add more posts as needed -->
     </div>
