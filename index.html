@@ -11,43 +11,44 @@
         background-color: #333333;
       }
       
-      .header {
+      #header1 {
         position: absolute;
-        top: 30px;
+        top: 40px;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, -50%);
         text-align: center;
         color: black;
         z-index: 1;
       }
-      
-      .header h1 {
-        font-size: 6em;
-        margin: 0;
-      }
-      
-      .header p {
-        font-size: 1.5em;
-        margin: 0;
-      }
-      
-      .subheader {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        text-align: center;
-        color: white;
-        z-index: 1;
-      }
-      
-      .subheader h2 {
+      #header1 h1 {
         font-size: 3em;
         margin: 0;
       }
       
-      .profile {
-        display: none;
+      #header2 {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        text-align: center;
+        color: black;
+        z-index: 1;
+      }
+      #header2 h1 {
+        font-size: 2em;
+        margin: 0;
+      }
+      #header2 p {
+        font-size: 1em;
+        margin: 0;
+      }
+      
+      #background {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        background: url("images/Website_wallpaper.png") center center no-repeat;
+        background-size: cover;
       }
       
       .blog {
@@ -55,10 +56,7 @@
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
       }
-      
       .post {
         width: calc(33.33% - 20px);
         margin: 10px;
@@ -69,13 +67,14 @@
     </style>
   </head>
   <body>
-    <img src="images/Website_wallpaper.png" alt="Header Image" style="width: 100%; height: auto;">
-    <div class="header">
-      <h1>Jack Clarke</h1>
-      <p>Welcome to my website! Here, I'll be sharing my progress on game development, coding, and other tech projects that I'm currently working on.</p>
+    <div id="background">
+      <div id="header1">
+        <h1>Jack Clarke</h1>
+      </div>
     </div>
-    <div class="subheader">
-      <h2>Latest Blog Posts</h2>
+    <div id="header2">
+      <h1>Welcome to my website!</h1>
+      <p>Here, I'll be sharing my progress on game development, coding, and other tech projects that I'm currently working on.</p>
     </div>
     <div class="blog">
       <div class="post">
