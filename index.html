@@ -13,27 +13,50 @@
       
       .header {
         position: absolute;
-        top: 50%;
+        top: 30px;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0);
         text-align: center;
         color: black;
         z-index: 1;
       }
+      
       .header h1 {
         font-size: 6em;
         margin: 0;
       }
+      
       .header p {
         font-size: 1.5em;
         margin: 0;
       }
       
+      .subheader {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        color: white;
+        z-index: 1;
+      }
+      
+      .subheader h2 {
+        font-size: 3em;
+        margin: 0;
+      }
+      
+      .profile {
+        display: none;
+      }
+      
       .blog {
-        margin-top: 100%;
+        margin-top: 50px;
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
       }
       
       .post {
@@ -50,6 +73,9 @@
     <div class="header">
       <h1>Jack Clarke</h1>
       <p>Welcome to my website! Here, I'll be sharing my progress on game development, coding, and other tech projects that I'm currently working on.</p>
+    </div>
+    <div class="subheader">
+      <h2>Latest Blog Posts</h2>
     </div>
     <div class="blog">
       <div class="post">
