@@ -6,9 +6,7 @@
     <meta charset="UTF-8">
     <title>Jack's Blog</title>
   
-     
     <style>
-    
       body {
         margin: 0;
         padding: 0;
@@ -38,69 +36,90 @@
         font-size: 1.7em;
       }
       
-      .blog {
-        margin-top: 0px;
-        margin-bottom: 10px;
-        padding: 20px;
+      #main {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        margin-top: 20px;
       }
       
-      .post {
-        width: calc(90% - 90px);
+      #blog-posts {
+        width: 70%;
         margin: 10px;
-        background: #f0f0f0;
         padding: 20px;
         box-sizing: border-box;
         font-size: 18px;
         color: black;
-      }
-            ul {
-             
-              font-size: 23px; /* Adjust the desired font size for my months/year */
-              color: white;
-              }
-      ul li a {
-            display: inline-block;
-         
-            color: white; 
-}
-       #browse-header{
-      color: white;
-     
+        background: #f0f0f0;
       }
       
-      a{
+      #sidebar {
+        width: 30%;
+        margin: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 18px;
+        color: white;
+      }
+      
+      #sidebar h3 {
+        color: white;
         font-size: 23px;
-      color: white;
       }
-       /*This ID is used to jump the user to the top of the page*/
-    <a id="top"></a>
       
-    
+      #sidebar ul {
+        font-size: 23px;
+        color: white;
+      }
+      
+      #sidebar ul li a {
+        display: inline-block;
+        color: white;
+      }
+      
+      a {
+        font-size: 23px;
+        color: white;
+      }
+      
+      /* This ID is used to jump the user to the top of the page */
+      #top {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
+        color: white;
+      }
       
     </style>
   </head>
+  
   <body>
-   
-    <img src="images/Screenshot (64).png" alt="Header Image" style="width: 100%; height: auto;">
+    <a id="top" href="#"></a>
+  
     <div id="header1">
       <h1>Jack's Blog</h1>
     </div>
+  
     <div id="header2">
       <p>Welcome to my blog! Here, I'll be sharing my progress on game development, coding, and other tech projects that I'm currently working on.</p>
     </div>
-
-    <h3 id="browse-header">Browse by Month:</h3>
-      <!-- List of links to month/year sections (li = link) (a = anchor) (href is the name of the reference that must be added to the post the links should jump to) -->
-    <ul> <!-- UL = unordered list -->
-      <li><a href="#may-2023">May 2023</a></li>
-      <li><a href="#april-2023">April 2023</a></li>
-     <li><a href="#may-2023">May 2023</a></li>
-      <li><a href="#april-2023">April 2023</a></li>
-      
   
+    <div id="main">
+      <div id="blog-posts">
+        <!-- Blog posts content -->
+        <h2>Blog Post Title</h2>
+        <p>This is a sample blog post.</p>
+      </div>
+  
+      <div id="sidebar">
+        <h3>Browse by Month:</h3>
+        <ul>
+          <!-- List of links to month/year sections -->
+          <li><a href="#may-2023">May 2023</a></li>
+          <li><a href="#april-2023">April 2023</a></li>
+          <li><a href="#may-2023">May 2023</a></li>
+          <li><a href="#april-2023">April 2023</a></li>
 
      
     
