@@ -45,7 +45,19 @@
         flex-wrap: wrap;
         justify-content: center;
       }
-      
+      .container {
+  display: flex;
+}
+
+.left-container {
+  width: 10%;
+  
+}
+
+.right-container {
+  width: 90%;
+ 
+}
       .post {
         width: calc(90% - 90px);
         margin: 10px;
@@ -92,16 +104,20 @@
       <p>Welcome to my blog! Here, I'll be sharing my progress on game development, coding, and other tech projects that I'm currently working on.</p>
     </div>
 
+    
+      
+  <div class="container">
+  <div class="left-container">
+    <!-- Content for the left container goes here -->
     <h3 id="browse-header">Browse by Month:</h3>
       <!-- List of links to month/year sections (li = link) (a = anchor) (href is the name of the reference that must be added to the post the links should jump to) -->
     <ul> <!-- UL = unordered list -->
       <li><a href="#may-2023">May 2023</a></li>
       <li><a href="#april-2023">April 2023</a></li>
     
-      
-  
-
-     
+  </div>
+  <div class="right-container">
+    <!-- Content for the right container goes here -->
     
     <div class="blog">
       <div class="post">
@@ -550,4 +566,9 @@ Thanks for reading,
 Jack
   </div>
 </div>
+  </div>
+</div>
+
+     
+    
       <a href="#top"> Back to Top</a>
