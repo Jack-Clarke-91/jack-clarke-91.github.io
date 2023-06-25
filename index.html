@@ -77,6 +77,17 @@
          
             color: white; 
 }
+
+      .back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: none;
+}
+
+.back-to-top.show {
+  display: block;
+}
        #browse-header{
       color: white;
      
@@ -87,7 +98,7 @@
       color: white;
       }
        /*This ID is used to jump the user to the top of the page*/
-    <a id="top"></a>
+   <a href="#top" class="back-to-top">Back to Top</a>
       
  img {
   display: block;
@@ -623,7 +634,7 @@ Jack
   </div>
    </div>
      
-          <a href="#top"> Back to Top</a>
+         <a id="top">Back To Top</a>
 <br><br>
           <br><br>
          
