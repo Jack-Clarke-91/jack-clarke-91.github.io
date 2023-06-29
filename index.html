@@ -97,13 +97,16 @@
 
 .text-row {
   white-space: nowrap;
-  animation: moveText 10s linear infinite; /* Adjust duration (10s) as needed */
+  animation: moveText 20s linear infinite; /* Adjust duration (10s) as needed */
 }
 
 @keyframes moveText {
   0% {
     transform: translateX(100%);
   }
+70% {
+      transform: translateX(-100%);
+   }
   100% {
     transform: translateX(-100%);
   }
