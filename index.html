@@ -1,129 +1,140 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    <meta charset="UTF-8">
-   
-  
-     
-    <style>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #333333;
+    }
     
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: #333333;
+    /* Styles for the scrolling text */
+    .scrolling-text {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: marquee 10s linear infinite;
+    }
+    
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
       }
-      
-      #header1 {
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        text-align: center;
-        color: white;
-        z-index: 1;
-        font-size: 2.5em;
+      100% {
+        transform: translateX(-100%);
       }
-      
-      #header2 {
-        position: absolute;
-        top: 280px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        text-align: center;
-        color: white;
-        z-index: 1;
-        font-size: 1.7em;
-      }
-      
-      .blog {
-        margin-top: 0px;
-        margin-bottom: 10px;
-        padding: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .container {
-  display: flex;
-}
-
-.left-container {
-  width: 10%;
-  
-}
-
-.right-container {
-  width: 80%;
- 
-}
-      .post {
-        width: calc(90% - 90px);
-        margin: 10px;
-        background: #f0f0f0;
-        padding: 20px;
-        box-sizing: border-box;
-        font-size: 18px;
-        color: black;
-      }
-            ul {
-             
-              font-size: 21px; /* Adjust the desired font size for my months/year */
-              color: white;
-              }
-      ul li a {
-            display: inline-block;
-         
-            color: white; 
-}
-      ul.black-list li {
-  color: black;
-  font-size: 18px;
-}
-       #browse-header{
+    }
+    
+    #header1 {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      text-align: center;
       color: white;
-     
-      }
-      
-      a{
-        font-size: 21px;
+      z-index: 1;
+      font-size: 2.5em;
+    }
+    
+    #header2 {
+      position: absolute;
+      top: 280px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      text-align: center;
       color: white;
-      }
-       /*This ID is used to jump the user to the top of the page*/
-    <a id="top"></a>
-      
- img {
-  display: block;
-  
-}
+      z-index: 1;
+      font-size: 1.7em;
+    }
     
-      
-    </style>
-  </head>
-  <body>
-   
-    <img src="images/Website_Background_Final.jpg" alt="Header Image" style="width: 100%; height: auto;">
-   
+    .blog {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .container {
+      display: flex;
+    }
+    
+    .left-container {
+      width: 10%;
+    }
+    
+    .right-container {
+      width: 80%;
+    }
+    
+    .post {
+      width: calc(90% - 90px);
+      margin: 10px;
+      background: #f0f0f0;
+      padding: 20px;
+      box-sizing: border-box;
+      font-size: 18px;
+      color: black;
+    }
+    
+    ul {
+      font-size: 21px;
+      color: white;
+    }
+    
+    ul li a {
+      display: inline-block;
+      color: white;
+    }
+    
+    ul.black-list li {
+      color: black;
+      font-size: 18px;
+    }
+    
+    #browse-header {
+      color: white;
+    }
+    
+    a {
+      font-size: 21px;
+      color: white;
+    }
+    
+    img {
+      display: block;
+    }
+  </style>
+</head>
 
-    
-      
+<body>
+  <img src="images/Website_Background_Final.jpg" alt="Header Image" style="width: 100%; height: auto;">
+
   <div class="container">
-  <div class="left-container">
-    <!-- Content for the left container goes here -->
-    <h3 id="browse-header">Browse by Month:</h3>
-      <!-- List of links to month/year sections (li = link) (a = anchor) (href is the name of the reference that must be added to the post the links should jump to) -->
-    <ul> <!-- UL = unordered list -->
-       <li><a href="#june-2023">June 2023</a></li>
-      <br>
-      <li><a href="#may-2023">May 2023</a></li>
-      <br>
-      <li><a href="#april-2023">April 2023</a></li>
-      <br>
-    
+    <div class="left-container">
+      <h3 id="browse-header">Browse by Month:</h3>
+      <ul>
+        <li><a href="#june-2023">June 2023</a></li>
+        <br>
+        <li><a href="#may-2023">May 2023</a></li>
+        <br>
+        <li><a href="#april-2023">April 2023</a></li>
+        <br>
+      </ul>
+    </div>
+    <div class="right-container">
+      <div class="scrolling-text">
+        <span>This row of text scrolls to the left off the screen then appears from the right on repeat</span>
+      </div>
+      <!-- Add your content for the right container here -->
+    </div>
   </div>
-  <div class="right-container">
-    <!-- Content for the right container goes here -->
+
+</body>
+
 
     
     
