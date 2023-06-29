@@ -98,7 +98,7 @@
 
 .text-row {
   white-space: nowrap;
-  animation: scrollText 30s linear infinite; /* Adjust duration (10s) as needed */
+  animation: scrollText 30s linear infinite; /* Adjust duration (30s) as needed */
 }
 
 @keyframes moveText {
@@ -110,6 +110,7 @@
     transform: translateX(-100%);
   }
 }
+
 .moving-text {
   display: inline-block;
   color: rgb(0, 255, 0);
@@ -124,14 +125,15 @@
     transform: translateX(100%);
     visibility: visible;
   }
-  100% {
+  90% {
     transform: translateX(calc(-140% - 100px));
     visibility: hidden;
   }
+  100% {
+    transform: translateX(100%);
+    visibility: visible;
+  }
 }
-
-
-
 
 
 
