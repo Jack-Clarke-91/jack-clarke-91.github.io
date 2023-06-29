@@ -113,9 +113,13 @@
   display: inline-block;
   color: rgb(0, 255, 0);
   font-size: 28px;
-  padding-left: 100%; /* Adjust padding as needed */
-  animation: scrollText 30s linear infinite;
   white-space: nowrap;
+  overflow: hidden;
+}
+
+.moving-text span {
+  display: inline-block;
+  animation: scrollText 10s linear infinite;
 }
 
 @keyframes scrollText {
@@ -126,6 +130,7 @@
     transform: translateX(-100%);
   }
 }
+
 
 
 
