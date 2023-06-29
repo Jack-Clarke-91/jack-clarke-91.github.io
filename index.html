@@ -121,13 +121,14 @@
 @keyframes scrollText {
   0% {
     transform: translateX(100%);
-    visibility: visible; /* Show the text at the beginning of animation */
+    visibility: visible;
   }
   100% {
-    transform: translateX(-100%);
-    visibility: hidden; /* Hide the text at the end of animation */
+    transform: translateX(calc(-100% - 100px)); /* Adjust the value to ensure the entire text is off-screen */
+    visibility: hidden;
   }
 }
+
 
 
 
