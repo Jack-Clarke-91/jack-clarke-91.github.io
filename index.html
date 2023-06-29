@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <style>
-    /* ... your existing styles ... */
-    
-    .scrolling-text-container {
-      position: relative;
-      height: 50px; /* Adjust the height as needed */
-      margin-bottom: 20px; /* Add margin-bottom to create space between scrolling text and blog posts */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #333333;
     }
     
     .scrolling-text {
@@ -21,14 +20,56 @@
       animation: marquee 10s linear infinite;
     }
     
-    /* ... your existing styles ... */
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
     
-    /* Additional styles to fix the blog post spacing */
-    .right-container {
+    #header1 {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      text-align: center;
+      color: white;
+      z-index: 1;
+      font-size: 2.5em;
+    }
+    
+    #header2 {
+      position: absolute;
+      top: 280px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      text-align: center;
+      color: white;
+      z-index: 1;
+      font-size: 1.7em;
+    }
+    
+    .blog {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      padding: 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: flex-start; /* Align items to the top */
+    }
+    
+    .container {
+      display: flex;
+    }
+    
+    .left-container {
+      width: 10%;
+    }
+    
+    .right-container {
+      width: 80%;
     }
     
     .post {
@@ -40,12 +81,39 @@
       font-size: 18px;
       color: black;
     }
+    
+    ul {
+      font-size: 21px;
+      color: white;
+    }
+    
+    ul li a {
+      display: inline-block;
+      color: white;
+    }
+    
+    ul.black-list li {
+      color: black;
+      font-size: 18px;
+    }
+    
+    #browse-header {
+      color: white;
+    }
+    
+    a {
+      font-size: 21px;
+      color: white;
+    }
+    
+    img {
+      display: block;
+    }
   </style>
 </head>
 
 <body>
   <img src="images/Website_Background_Final.jpg" alt="Header Image" style="width: 100%; height: auto;">
-
   <div class="container">
     <div class="left-container">
       <h3 id="browse-header">Browse by Month:</h3>
@@ -58,28 +126,8 @@
         <br>
       </ul>
     </div>
-    
-    <div class="scrolling-text-container">
-      <div class="scrolling-text">
-        <span>This row of text scrolls to the left off the screen then appears from the right on repeat</span>
-      </div>
-    </div>
-    
-    <div class="right-container">
-      <!-- Add your content for the right container here -->
-      <div class="post">
-        <!-- Content of the first blog post -->
-      </div>
-      <div class="post">
-        <!-- Content of the second blog post -->
-      </div>
-      <!-- Add more blog posts as needed -->
-    </div>
-  </div>
-
-</body>
-</html>
-
+    <div class="scrolling-text">
+      <span>This row of text scrolls to the left off the screen then appears from the right on repeat</
 
 
 
