@@ -110,22 +110,22 @@
 }
 .moving-text {
    display: inline-block;
-   overflow: hidden;
-   white-space: nowrap;
    color: rgb(0, 255, 0);
    font-size: 28px;
    padding-left: 100%; /* Adjust padding as needed */
-   animation: scrollText linear infinite;
+   animation: scrollText 10s linear infinite;
+   white-space: nowrap;
 }
 
 @keyframes scrollText {
    0% {
-      padding-left: 100%;
+      transform: translateX(0);
    }
    100% {
-      padding-left: 0;
+      transform: translateX(-100%);
    }
 }
+
 
 
 
