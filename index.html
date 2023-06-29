@@ -22,6 +22,24 @@
     }
     
     /* ... your existing styles ... */
+    
+    /* Additional styles to fix the blog post spacing */
+    .right-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start; /* Align items to the top */
+    }
+    
+    .post {
+      width: calc(90% - 90px);
+      margin: 10px;
+      background: #f0f0f0;
+      padding: 20px;
+      box-sizing: border-box;
+      font-size: 18px;
+      color: black;
+    }
   </style>
 </head>
 
@@ -49,6 +67,13 @@
     
     <div class="right-container">
       <!-- Add your content for the right container here -->
+      <div class="post">
+        <!-- Content of the first blog post -->
+      </div>
+      <div class="post">
+        <!-- Content of the second blog post -->
+      </div>
+      <!-- Add more blog posts as needed -->
     </div>
   </div>
 
