@@ -108,13 +108,25 @@
     transform: translateX(-100%);
   }
 }
-.moving-text { 
-   display: inline-block; 
-   padding-right: 300%; /* Adjust padding as needed */ 
- color: rgb(0, 255, 0); 
- font-size: 28px;
-
+.moving-text {
+   display: inline-block;
+   overflow: hidden;
+   white-space: nowrap;
+   color: rgb(0, 255, 0);
+   font-size: 28px;
+   padding-left: 100%; /* Adjust padding as needed */
+   animation: scrollText linear infinite;
 }
+
+@keyframes scrollText {
+   0% {
+      padding-left: 100%;
+   }
+   100% {
+      padding-left: 0;
+   }
+}
+
 
 
 
