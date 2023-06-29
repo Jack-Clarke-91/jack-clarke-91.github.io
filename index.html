@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <style>
@@ -11,8 +10,11 @@
       background-color: #333333;
     }
     
-    /* Styles for the scrolling text */
     .scrolling-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
       overflow: hidden;
       white-space: nowrap;
       animation: marquee 10s linear infinite;
@@ -112,7 +114,6 @@
 
 <body>
   <img src="images/Website_Background_Final.jpg" alt="Header Image" style="width: 100%; height: auto;">
-
   <div class="container">
     <div class="left-container">
       <h3 id="browse-header">Browse by Month:</h3>
@@ -125,8 +126,9 @@
         <br>
       </ul>
     </div>
-     <div class="scrolling-text">
-        <span>This row of text scrolls to the left off the screen then appears from the right on repeat</span>
+    <div class="scrolling-text">
+      <span>This row of text scrolls to the left off the screen then appears from the right on repeat</
+
       </div>
     <div class="right-container">
      
