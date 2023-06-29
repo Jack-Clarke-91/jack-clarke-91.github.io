@@ -90,6 +90,30 @@
         font-size: 21px;
       color: white;
       }
+
+.text-container {
+  overflow: hidden;
+}
+
+.text-row {
+  white-space: nowrap;
+  animation: moveText 10s linear infinite; /* Adjust duration (10s) as needed */
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.moving-text {
+  display: inline-block;
+  padding-right: 100%; /* Adjust padding as needed */
+}
+
        /*This ID is used to jump the user to the top of the page*/
     <a id="top"></a>
       
@@ -120,6 +144,12 @@
       <br>
       <li><a href="#april-2023">April 2023</a></li>
       <br>
+<div class="text-container">
+  <div class="text-row">
+    <span class="moving-text">Your moving text goes here</span>
+  </div>
+</div>
+
     
   </div>
   <div class="right-container">
