@@ -123,17 +123,18 @@
 @keyframes scrollText {
   0% {
     transform: translateX(100%);
-    visibility: visible;
-  }
-  90% {
-    transform: translateX(calc(-100% - 100px));
     visibility: hidden;
   }
-  100% {
+  10% {
     transform: translateX(0%);
     visibility: visible;
   }
+  100% {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
 }
+
 
 
 
