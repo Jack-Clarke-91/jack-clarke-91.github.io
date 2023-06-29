@@ -115,12 +115,13 @@
   font-size: 28px;
   white-space: nowrap;
   overflow: hidden;
+  position: relative;
 }
 
 .moving-text span {
   display: inline-block;
+  position: absolute;
   animation: scrollText 10s linear infinite;
-  animation-fill-mode: forwards;
 }
 
 @keyframes scrollText {
