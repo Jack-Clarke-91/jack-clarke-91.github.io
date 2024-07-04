@@ -1,124 +1,128 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #333333;
-    }
-
-    #header1 {
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translate(-50%, 0);
-      text-align: center;
-      color: white;
-      z-index: 1;
-      font-size: 2.5em;
-    }
-
-    #header2 {
-      position: absolute;
-      top: 280px;
-      left: 50%;
-      transform: translate(-50%, 0);
-      text-align: center;
-      color: Off White;
-      z-index: 1;
-      font-size: 1.7em;
-    }
-
-    .blog {
-      margin-top: 0px;
-      margin-bottom: 10px;
-      padding: 10px;
+  
+  <head>
+    <meta charset="UTF-8">
+   <style>
+    
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #333333;
+      }
+      #header1 {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        color: white;
+        z-index: 1;
+        font-size: 2.5em;
+      }
+      
+      #header2 {
+        position: absolute;
+        top: 280px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        color: Off White;
+        z-index: 1;
+        font-size: 1.7em;
+      }
+      
+      .blog {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .container {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .container {
-      display: flex;
-    }
-
-    .left-container {
-      width: 20%;
-      margin-right: 20px;
-      position: relative;
-    }
-
-    .right-container {
-      width: 80%;
-    }
-
-    .post {
-      width: calc(90% - 90px);
-      margin: 10px;
-      background: #FAF9F6;
-      padding: 20px;
-      box-sizing: border-box;
-      font-size: 18px;
-      color: black;
-    }
-
-    ul {
-      font-size: 21px;
-      color: white;
-    }
-
-    ul li a {
-      display: inline-block;
-      color: white;
-    }
-
-    ul.black-list li {
-      color: black;
-      font-size: 18px;
-    }
-
-    #browse-header {
-      color: white;
-    }
-
-    a {
-      font-size: 21px;
-      color: white;
-    }
-
-    .text-container {
-      overflow: hidden;
-    }
-
-    .text-row {
-      white-space: nowrap;
-      animation: scrollText 20s linear infinite;
-    }
-
-    .moving-text {
-      display: inline-block;
-      color: rgb(0, 255, 0);
-      font-size: 20px;
-      white-space: nowrap;
-      overflow: hidden;
-      position: relative;
-    }
-
-    @keyframes scrollText {
-      0% {
-        transform: translateX(100%);
-        visibility: hidden;
       }
 
-      100% {
-        transform: translateX(-100%);
-        visibility: visible;
+  .left-container {
+  width: 10%;
+  }
+
+.right-container {
+  width: 80%;
+ 
+}
+      .post {
+        width: calc(90% - 90px);
+        margin: 10px;
+        background: #FAF9F6;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 18px;
+        color: black;
       }
+            ul {
+             
+              font-size: 21px; /* Adjust the desired font size for my months/year */
+              color: white;
+              }
+            ul li a {
+            display: inline-block;
+         
+            color: white; 
     }
+      ul.black-list li {
+      color: black;
+      font-size: 18px;
+   }
+       #browse-header{
+      color: white;
+     
+      }
+      
+      a{
+        font-size: 21px;
+      color: white;
+      }
+ 
+
+
+      
+/* Code for left scrolling text */
+.text-container {
+  overflow: hidden;
+}
+
+.text-row {
+  white-space: nowrap;
+  animation: scrollText 20s linear infinite; /* Adjust duration (30s) as needed */
+}
+
+
+.moving-text {
+  display: inline-block;
+  color: rgb(0, 255, 0);
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+      
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+  99.9% {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+}
 
     /* Style for the Back to Top link */
     .back-to-top {
@@ -143,41 +147,41 @@
 <body>
 
   <a id="top"></a>
-  <img src="images/Website_Background_Final.jpg" alt="Header Image" style="width: 100%; height: auto;">
+     <img src="images/Website_Background_Final.jpg" alt="Header Image" style="width: 100%; height: auto;">
 
-  <div class="text-container">
-    <div class="text-row">
-      <b><span style="color: rgb(0, 180, 0);">Current Projects:</span></b>
-      <b><span style="color: rgb(0, 255, 0);">Hardware: </span></b>
-      <span style="color: rgb(0, 180, 0);">Photography &nbsp;|&nbsp;</span>
-      <b><span style="color: rgb(0, 255, 0);">Unity: </span></b>
-      <span style="color: rgb(0, 180, 0);">2D RPG Game &nbsp;|&nbsp;</span>
-      <b><span style="color: rgb(0, 255, 0);">Website: </span></b>
-      <span style="color: rgb(0, 180, 0);">Modifications and Improvements &nbsp;|&nbsp;</span>
-      <b><span style="color: rgb(0, 255, 0);">Uni: </span></b>
-      <span style="color: rgb(0, 180, 0);">Awaiting Results</span>
-    </div>
+<div class="text-container">
+  <div class="text-row">
+    <b><span style="color: rgb(0, 180, 0);">Current Projects:</span></b>
+    <b><span style="color: rgb(0, 255, 0);">Hardware: </span></b>
+    <span style="color: rgb(0, 180, 0);">Photography &nbsp;|&nbsp;</span>
+    <b><span style="color: rgb(0, 255, 0);">Unity: </span></b>
+    <span style="color: rgb(0, 180, 0);">2D RPG Game &nbsp;|&nbsp;</span>
+    <b><span style="color: rgb(0, 255, 0);">Website: </span></b>
+    <span style="color: rgb(0, 180, 0);">Modifications and Improvements &nbsp;|&nbsp;</span>
+    <b><span style="color: rgb(0, 255, 0);">Uni: </span></b>
+    <span style="color: rgb(0, 180, 0);">Awaiting Results</span>
   </div>
+</div>
 
+   
+
+    
+      
   <div class="container">
-    <div class="left-container">
-      <!-- Content for the left container goes here -->
-      <h3 id="browse-header">&nbsp;Explore Topics:</h3>
+  <div class="left-container">
+    <!-- Content for the left container goes here -->
+    <h3 id="browse-header">&nbsp;Explore Topics:</h3>
       <!-- List of links to topics (li = link) (a = anchor) (href is the name of the reference that must be added to the post the links should jump to) -->
-      <ul>
-        <!-- UL = unordered list -->
-        <li><a href="#Game">Game Design</a></li>
-        <br>
-        <li><a href="#Astrophotography">Astrophotography</a></li>
-        <br>
-        <li><a href="#Photography">Photography</a></li>
-        <br>
-        <li><a href="#Hardware">Hardware</a></li>
-        <br>
-      </ul>
-      <!-- Fixed Back to Top link -->
-      <a href="#top" class="back-to-top">Back to Top</a>
-    </div>
+    <ul> <!-- UL = unordered list -->
+      <li><a href="#Game">Game Design</a></li>
+      <br>
+       <li><a href="#Astrophotography">Astrophotography</a></li>
+      <br>
+      <li><a href="#Photography">Photography</a></li>
+      <br>
+      <li><a href="#Hardware">Hardware</a></li>
+      <br>
+   </div>
 
   <div class="right-container">
     <!-- Content for the right container goes here -->
