@@ -11,17 +11,27 @@
     width: 100%;
     height: 100vh;
 }
-.left-container {
-    padding: 20px
-}
+
 .hero-left {
-    flex: 0 0 10%;           /* same width as your sidebar */
-    background-color: #111111; /* slightly darker */
+    flex: 0 0 10%;           /* exactly 10% width */
+    background-color: #111111;
+    box-sizing: border-box;   /* ensures padding doesn’t add width */
+    padding: 20px;            /* optional, text spacing */
+    color: white;             /* text visible on dark bar */
 }
 
 .hero-right {
     flex: 1;           /* remaining space */
     background-color: #191919; /* same as main body */
+}
+.left-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-container li {
+    margin-bottom: 12px;      /* spacing between topics */
 }
       #header1 {
         position: absolute;
