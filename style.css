@@ -14,12 +14,12 @@
 
 .hero-left {
     width: 10%;             /* same width as your sidebar */
-    background-color: #222222; /* slightly darker */
+    background-color: #111111; /* slightly darker */
 }
 
 .hero-right {
     width: 90%;             /* remaining space */
-    background-color: #333333; /* same as main body */
+    background-color: #222222; /* same as main body */
 }
       #header1 {
         position: absolute;
