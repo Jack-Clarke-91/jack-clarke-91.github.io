@@ -25,50 +25,7 @@
       inset: 0;
       background: rgba(0, 0, 0, 0.45);
 }
-/* Ensure the grid is positioned over the hero */
-.project-grid {
-  position: absolute;
-  bottom: 50px;       /* adjust vertical placement */
-  left: 50%;
-  transform: translateX(-50%);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  width: 90%;
-  z-index: 2;         /* above overlay */
-  text-align: center;
-}
 
-/* Individual project cards */
-.project-card {
-  background: rgba(255,255,255,0.9); /* semi-transparent so hero is still visible */
-  border-radius: 10px;
-  padding: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-}
-
-/* Tags styling */
-.project-card .tags span {
-  display: inline-block;
-  background: #333;
-  color: white;
-  padding: 3px 8px;
-  margin: 3px 2px;
-  border-radius: 20px;
-  font-size: 0.8em;
-}
       #header1 {
         position: absolute;
         top: 20px;
