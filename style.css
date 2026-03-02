@@ -2,55 +2,24 @@
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background-color: #191919;
+        background-color: #333333;
       }
 
-/*hero space is empty gray space at the top of the home screen*/
-/* hero area at the top */
-.hero-space {
-    width: 100%;
-    height: 100vh;       /* full screen height */
-    display: flex;
+     
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
-/* left bar fixed at 10% */
-.hero-left {
-    width: 10%;               /* absolutely fixed 10% width */
-    background-color: #111111;
-    color: white;
-    position: relative;       /* needed for absolute content inside */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures full-screen coverage */
+  display: block;
 }
 
-/* topics container inside left bar */
-.left-container {
-    position: absolute;
-    bottom: 33%;              /* roughly 1/3 up from bottom */
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
 
-.left-container ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.left-container li {
-    margin-bottom: 12px;
-}
-
-.left-container li a {
-    color: white;
-    font-size: 21px;
-    text-decoration: none;
-}
-
-/* right side fills rest of hero */
-.hero-right {
-    flex: 1;                  /* remaining 90% of width */
-    background-color: #191919;
-}
       #header1 {
         position: absolute;
         top: 20px;
@@ -86,8 +55,7 @@
       }
 
   .left-container {
-  
-        height: 100%;
+  width: 10%;
   }
 
 .right-container {
@@ -146,8 +114,6 @@
     .back-to-top:hover {
       background-color: #555;
     }
-
-
 
 
 
