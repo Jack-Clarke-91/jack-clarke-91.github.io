@@ -1,5 +1,164 @@
 <!DOCTYPE html>
 <html>
+   <!--This ID is used to jump the user to the top of the page-->
+    <a id="top"></a>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jack's Blog</title>
+  
+     
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #333333;
+      }
+      
+      #header1 {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        color: white;
+        z-index: 1;
+        font-size: 2.5em;
+      }
+      
+      #header2 {
+        position: absolute;
+        top: 280px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        color: white;
+        z-index: 1;
+        font-size: 1.7em;
+      }
+      
+      .blog {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .post {
+        width: calc(60% - 40px);
+        margin: 10px;
+        background: #f0f0f0;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 18px;
+      }
+            ul {
+  font-size: 22px; /* Adjust the desired font size for my months/year */
+}
+    </style>
+  </head>
+  <body>
+    <img src="Image Source Here" alt="Header Image" style="width: 100%; height: auto;">
+    <div id="header1">
+      <h1>Page Title Here</h1>
+    </div>
+    <div id="header2">
+      <p> Page Description Here</p>
+    </div>
+    
+    <h2>Browse By Month</h2>
+      <!-- List of links to month/year sections -->
+    <ul> <!-- UL = unordered list -->
+      <li><a href="#april-2023">April 2023</a></li>
+      <li><a href="#may-2023">May 2023</a></li>
+  
+
+     
+    
+    <div class="blog">
+      <div class="post">
+           <h2>Header Here</h2>
+<p>Post here
+
+
+*********************************************************************************************************************
+Certainly! Here's a brief explanation of each element of the code you provided:
+
+1. `<!DOCTYPE html>`: This is the HTML5 doctype declaration, specifying the version of HTML being used.
+
+2. `<html>`: This is the opening tag for the HTML document.
+
+3. `<a id="top"></a>`: This is an anchor element with the ID "top" used as an anchor point to jump the user to the top of the page.
+
+4. `<head>`: This is the opening tag for the head section of the HTML document, which contains meta information and external resources.
+
+5. `<meta charset="UTF-8">`: This meta tag specifies the character encoding of the document as UTF-8, which supports a wide range of characters and languages.
+
+6. `<title>Jack's Blog</title>`: This is the title element, which sets the title of the web page that appears in the browser's title bar or tab.
+
+7. `<style>`: This is the opening tag for the style block, where you define the CSS styles for the page.
+
+8. `body { ... }`: This is a CSS rule that styles the body element, setting properties like margin, padding, font-family, and background color.
+
+9. `#header1 { ... }`: This is a CSS rule that styles an element with the ID "header1", positioning it absolutely, setting its position, color, font size, etc.
+
+10. `#header2 { ... }`: This is a CSS rule that styles an element with the ID "header2", similar to the previous rule.
+
+11. `.blog { ... }`: This is a CSS rule that styles an element with the class "blog", setting properties like margin, padding, display, and flex properties for layout.
+
+12. `.post { ... }`: This is a CSS rule that styles an element with the class "post", setting properties like width, margin, background, padding, and font size.
+
+13. `ul { ... }`: This is a CSS rule that styles unordered list elements, setting the desired font size for the list items representing months/year.
+
+14. `</style>`: This is the closing tag for the style block.
+
+15. `<body>`: This is the opening tag for the body section of the HTML document, which contains the visible content of the web page.
+
+16. `<img src="Image Source Here" alt="Header Image" style="width: 100%; height: auto;">`: This is an image element that displays an image as the header, with the source URL specified in the `src` attribute and alternative text specified in the `alt` attribute.
+
+17. `<div id="header1"> ... </div>`: This is a `<div>` element with the ID "header1" that contains a heading (`<h1>`) representing the page title.
+
+18. `<div id="header2"> ... </div>`: This is a `<div>` element with the ID "header2" that contains a paragraph (`<p>`) representing the page description.
+
+19. `<h2>Browse By Month</h2>`: This is a heading level 2 element that displays the text "Browse By Month".
+
+20. `<ul> ... </ul>`: This is an unordered list element that contains a list of links to different month/year sections.
+
+21. `<li><a href="#april-2023">April 2023</a></li>`: This is a list item within the unordered list, containing an anchor element (`<a>`) with an `href` attribute pointing to the corresponding section, representing the month "April 2023".
+
+22. `<li><a href="#may-2023">May
+*********************************************************************************************************************
+
+
+SPLITTING MY HTML AND CSS 
+In my git repo I added a new file blank css file named style.css and cut <style> all code inside the style tags was cut and pasted into the style.css file </style>
+
+On my HTML index.html I added a link to the style.css file 
+
+
+
+One thing missing — you have no <meta name="viewport"> tag in your <head>. This is essential for the site to display correctly on mobile. Add this line directly after your charset meta tag:
+html<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Without it, mobile browsers will zoom out and render the page as if it were a desktop screen, making everything tiny.
+
+
+
+/* Full screen blank space */
+.hero-space {
+    height: 100vh;              /* full viewport height */
+    width: 100%;                /* full width */
+    background-color: #ffffff;  /* match your blog background */
+}
+
+
+
+
+FULL WEBSITE (HTML) 
+****************************************************************************************************
+<!DOCTYPE html>
+<html>
   
   <head>
     <meta charset="UTF-8">
@@ -12,8 +171,13 @@
 
 <body>
   
+<div class="hero">
+  <a id="top"></a>
+  <img src="images/Moon_Composite_16-9Ratio.PNG" alt="Header Image" class="hero-image">
+  <div class="hero-overlay"></div>
+</div>
 
-<div class="hero-space"></div>
+
   
   <div class="container">
   <div class="left-container">
@@ -33,9 +197,6 @@
     <a href="#top" class="back-to-top">Back to Top</a>
    </div>
 
-    <div class="hero-space"></div>
-
-</div>
   <div class="right-container">
     <!-- Content for the right container goes here -->
          <div class="blog">
@@ -896,30 +1057,3 @@ Jack
           <br><br>
          
      
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
