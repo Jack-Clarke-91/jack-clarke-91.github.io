@@ -51,6 +51,7 @@
 
   .left-container {
   width: 10%;
+background-color: #222222; /* slightly darker than #333333 */
   }
 
 .right-container {
