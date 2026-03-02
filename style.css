@@ -19,11 +19,6 @@
   display: block;
 }
 
-.hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.45);
-}
 
       #header1 {
         position: absolute;
