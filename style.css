@@ -13,21 +13,23 @@
 }
 
 .hero-left {
-    flex: 0 0 10%;           /* exactly 10% width */
+    flex: 0 0 10%;           /* fixed 10% width */
+    max-width: 10%;           /* prevent expansion */
+    min-width: 10%;           /* prevent shrinking below 10% */
+    box-sizing: border-box;   /* padding doesn’t add to width */
+    padding: 20px;
     background-color: #111111;
-    box-sizing: border-box;   /* ensures padding doesn’t add width */
-    padding: 20px;            /* optional, text spacing */
-    color: white;             /* text visible on dark bar */
+    color: white;
+    display: flex;            
+    flex-direction: column;   
+    justify-content: center;  /* optional: vertical centering */
 }
-
 .hero-right {
     flex: 1;           /* remaining space */
     background-color: #191919; /* same as main body */
 }
 .left-container ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+     word-wrap: break-word;
 }
 
 .left-container li {
@@ -68,7 +70,7 @@
       }
 
   .left-container {
-  width: 10%;
+  
         height: 100%;
   }
 
