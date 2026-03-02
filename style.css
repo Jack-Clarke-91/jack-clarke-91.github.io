@@ -25,46 +25,49 @@
       inset: 0;
       background: rgba(0, 0, 0, 0.45);
 }
-
-.grid {
+/* Ensure the grid is positioned over the hero */
+.project-grid {
+  position: absolute;
+  bottom: 50px;       /* adjust vertical placement */
+  left: 50%;
+  transform: translateX(-50%);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding: 20px;
-}
-
-.project-card {
-  background: #FAF9F6;
-  border-radius: 10px;
-  overflow: hidden;
+  width: 90%;
+  z-index: 2;         /* above overlay */
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
 }
 
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+/* Individual project cards */
+.project-card {
+  background: rgba(255,255,255,0.9); /* semi-transparent so hero is still visible */
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card img {
   width: 100%;
-  height: auto;
+  border-radius: 10px;
   display: block;
+  margin-bottom: 10px;
 }
 
-.project-card .tags {
-  margin: 10px 0;
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
+/* Tags styling */
 .project-card .tags span {
   display: inline-block;
   background: #333;
   color: white;
-  padding: 5px 10px;
+  padding: 3px 8px;
+  margin: 3px 2px;
   border-radius: 20px;
-  margin: 3px;
-  font-size: 0.85em;
+  font-size: 0.8em;
 }
       #header1 {
         position: absolute;
