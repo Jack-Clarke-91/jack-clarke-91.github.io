@@ -6,37 +6,38 @@
       }
 
 /*hero space is empty gray space at the top of the home screen*/
-/* hero space at the top */
+/* hero area at the top */
 .hero-space {
-    display: flex;
     width: 100%;
-    height: 100vh;           /* full viewport height */
+    height: 100vh;       /* full screen height */
+    display: flex;
 }
 
-/* left sidebar */
+/* left bar fixed at 10% */
 .hero-left {
-    flex: 0 0 10%;           /* fixed 10% width */
-    max-width: 10%;
-    min-width: 10%;
-    box-sizing: border-box;
+    width: 10%;               /* absolutely fixed 10% width */
     background-color: #111111;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;  /* push content from bottom */
-    padding-bottom: 33%;         /* roughly 1/3 from bottom */
+    position: relative;       /* needed for absolute content inside */
 }
 
-/* topics list inside left bar */
+/* topics container inside left bar */
+.left-container {
+    position: absolute;
+    bottom: 33%;              /* roughly 1/3 up from bottom */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 .left-container ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    word-wrap: break-word;
 }
 
 .left-container li {
-    margin-bottom: 12px;      /* spacing between topics */
+    margin-bottom: 12px;
 }
 
 .left-container li a {
@@ -45,9 +46,9 @@
     text-decoration: none;
 }
 
-/* right side (empty hero space) */
+/* right side fills rest of hero */
 .hero-right {
-    flex: 1;
+    flex: 1;                  /* remaining 90% of width */
     background-color: #191919;
 }
       #header1 {
