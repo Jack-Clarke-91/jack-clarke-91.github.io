@@ -1,4 +1,16 @@
+/* Make the blank space full viewport height */
+.hero-space {
+    height: 100vh;           /* 100% of the viewport height */
+    width: 100%;             /* full width */
+    background-color: #ffffff; /* match your background color */
+}
 
+/* Optional: add a little responsive padding if needed */
+.hero-space {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
       body {
         margin: 0;
         padding: 0;
