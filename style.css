@@ -6,34 +6,49 @@
       }
 
 /*hero space is empty gray space at the top of the home screen*/
+/* hero space at the top */
 .hero-space {
-    display: flex;          /* side-by-side layout */
+    display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100vh;           /* full viewport height */
 }
 
+/* left sidebar */
 .hero-left {
     flex: 0 0 10%;           /* fixed 10% width */
-    max-width: 10%;           /* prevent expansion */
-    min-width: 10%;           /* prevent shrinking below 10% */
-    box-sizing: border-box;   /* padding doesn’t add to width */
-    padding: 20px;
+    max-width: 10%;
+    min-width: 10%;
+    box-sizing: border-box;
     background-color: #111111;
     color: white;
-    display: flex;            
-    flex-direction: column;   
-    justify-content: center;  /* optional: vertical centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;  /* push content from bottom */
+    padding-bottom: 33%;         /* roughly 1/3 from bottom */
 }
-.hero-right {
-    flex: 1;           /* remaining space */
-    background-color: #191919; /* same as main body */
-}
+
+/* topics list inside left bar */
 .left-container ul {
-     word-wrap: break-word;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
 }
 
 .left-container li {
     margin-bottom: 12px;      /* spacing between topics */
+}
+
+.left-container li a {
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+/* right side (empty hero space) */
+.hero-right {
+    flex: 1;
+    background-color: #191919;
 }
       #header1 {
         position: absolute;
