@@ -11,14 +11,16 @@
     width: 100%;
     height: 100vh;
 }
-
+.left-container {
+    padding: 40px 20px;
+}
 .hero-left {
-    width: 10%;             /* same width as your sidebar */
+    flex: 0 0 10%            /* same width as your sidebar */
     background-color: #111111; /* slightly darker */
 }
 
 .hero-right {
-    width: 90%;             /* remaining space */
+    flex: 1;           /* remaining space */
     background-color: #191919; /* same as main body */
 }
       #header1 {
