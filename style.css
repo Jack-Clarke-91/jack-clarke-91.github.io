@@ -47,11 +47,13 @@
         flex-wrap: wrap;
         justify-content: center;
       }
-      .container {
+
+
+     .container {
       display: flex;
       }
 
-   .left-container {
+   .left-container { /* contains links to about, full blog, contact */
     width: 12%;
     height: 100vh;
     position: absolute;
@@ -71,29 +73,38 @@
 text-align: center;
 }
 
-.left-container ul li a {
-    color: #ffffff;
+.left-container ul li a { /* font control for left-side nav column about, full blog, contact */
+    color: #777777;
     text-decoration: none;
-    font-size: 14px;
+    font-size:28px;
 }
 
 .left-container ul li a:hover {
     color: #aaaaaa;
 }
 
+  a{
+        font-size: 21px; 
+        color: white;
+	padding 10px 0; /* padding for white line */
+	border-bottom: 1px solid #444; /*adds white line under each ul item--#444 is colour of line */
+      }
+ 
+
+
+
 .right-container {
   width: 100%
  
 }
-
-      .post { /* blog posts */
+	.post {   /* blog posts */
         width: calc(90% - 90px);
         margin: 10px;
-        background: #202020;
+        background: #202020; /* blog post background colour */
         padding: 20px;
         box-sizing: border-box;
-        font-size: 18px;
-        color: #E8E6E3;
+        font-size: 18px; 
+        color: #999999; /* blog post font colour */
       }
             ul {
              
@@ -109,18 +120,10 @@ text-align: center;
       color: black;
       font-size: 18px;
    }
-       #browse-header{ 
-      color: white;
-     
-      }
       
-      a{
-        font-size: 21px; /* browse section topics */
-        color: white;
-	padding:10px 0; /* padding for white line */
-	border-bottom: 1px solid #444; /*adds white line under each ul item--#444 is colour of line */
-      }
- 
+     
+      
+    
 
 
     /* Style for the Back to Top link */
@@ -129,8 +132,8 @@ text-align: center;
       bottom: 30px;
       left: 20px;
       font-size: 18px;
-      background-color: #444;
-      color: white;
+      background-color: #202020;
+      color: #999999;
       padding: 10px;
       text-decoration: none;
       border-radius: 5px;
