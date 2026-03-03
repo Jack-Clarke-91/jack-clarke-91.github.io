@@ -2,15 +2,15 @@
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background-color: #111111;
+        background-color: #111111; /*body colour is darker than herospace to make the 10% gap remaining from herospaces 90% coverage to be a dark bar*/
       }
 
      
 .hero-space {
-    width: 90%;              /* full width of the screen */
+    width: 90%;              /* 90% width of the screen */
     height: 100vh;            /* full height of the viewport */
-    background-color: #191919; /* the blank color you want */
-    margin: 0;
+    background-color: #191919; /* blank colour hexadecimal */
+    margin-left: auto; /* puts the remaining 10% on the left side of screen */
     padding: 0;
     box-sizing: border-box;
 }
