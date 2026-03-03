@@ -9,7 +9,7 @@
 .hero-space {
     width: 87%;              /* 87% width of the screen */
     height: 100vh;            /* full height of the viewport */
-    background-color: #121212; /* blank colour hexadecimal */
+    background-color: #141414; /* blank colour hexadecimal */
     margin-left: auto; /* puts the remaining 13% on the left side of screen */
     padding: 0;
     box-sizing: border-box;
