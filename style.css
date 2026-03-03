@@ -18,7 +18,7 @@
 
 
       #header1 {
-        position: absolute;
+        position: absolute; /* locks the item in place on the page. Use fixed if it needs to be locked in place on the screen */
         top: 20px;
         left: 50%;
         transform: translate(-50%, 0);
@@ -81,7 +81,8 @@
 }
 
 .right-container {
-  width: 80%;
+  width: 87%;
+      position: centre;
  
 }
 
