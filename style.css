@@ -88,11 +88,11 @@
       .post { /* blog posts */
         width: calc(90% - 90px);
         margin: 10px;
-        background: #FAF9F6;
+        background: #202020;
         padding: 20px;
         box-sizing: border-box;
         font-size: 18px;
-        color: black;
+        color: #E8E6E3;
       }
             ul {
              
@@ -108,13 +108,13 @@
       color: black;
       font-size: 18px;
    }
-       #browse-header{
+       #browse-header{ /* Header at top of browse section */
       color: white;
      
       }
       
       a{
-        font-size: 21px;
+        font-size: 21px; /* browse section topics */
       color: white;
       }
  
@@ -137,7 +137,3 @@
     .back-to-top:hover {
       background-color: #555;
     }
-
-
-
-
