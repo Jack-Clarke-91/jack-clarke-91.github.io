@@ -13,7 +13,33 @@
     margin-left: auto; /* puts the remaining 13% on the left side of screen */
     padding: 0;
     box-sizing: border-box;
-    
+    display: flex;            /* enable flex layout */
+    flex-direction: column;   /* stack children vertically */
+    justify-content: left;  /* vertically center content */
+    align-items: left;      /* horizontally center content */
+   
+
+.intro-line {  			 /* home page intro */
+        font-family: Arial, sans-serif;
+        position: relative; /* ensures it layers over .hero-space */
+        text-align: centre;    
+	margin-top: 12vh; 
+	left: 5%; /* increases left margin size by 5% */
+	
+        color: white; /* blog post font colour */
+      }
+
+.intro-line.main{		/* I have seperated intro line main & sub in HTML to change font size in CSS */
+	font-size: 76px;
+	font-weight: 700; /* makes font bold. 400 is normal, 700 is bold. Some fonts support 300-900. */
+}
+
+.intro-line.sub{
+	font-size: 32px;
+	margin-top: 0px; /* gap between bottom of .main and top of .sub */
+	color: #777777;
+}
+
 }
 
 
@@ -47,6 +73,7 @@
         flex-wrap: wrap;
         justify-content: center;
       }
+	
 
 
      .container {
@@ -116,6 +143,21 @@ text-align: center;
          
             color: white; 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
       ul.black-list li {
       color: black;
       font-size: 18px;
@@ -126,7 +168,7 @@ text-align: center;
     
 
 
-    /* Style for the Back to Top link */
+     Style for the Back to Top link 
     .back-to-top {
       position: fixed;
       bottom: 30px;
@@ -143,3 +185,4 @@ text-align: center;
     .back-to-top:hover {
       background-color: #555;
     }
+*/
