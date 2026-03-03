@@ -13,9 +13,7 @@
     margin-left: auto; /* puts the remaining 13% on the left side of screen */
     padding: 0;
     box-sizing: border-box;
-        .left-container {
-  width: 10%;
-  }
+    
 }
 
 
@@ -53,7 +51,35 @@
       display: flex;
       }
 
+   .left-container {
+    width: 12%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
+.left-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-container ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.left-container ul li a:hover {
+    color: #aaaaaa;
+}
 
 .right-container {
   width: 80%;
