@@ -2,7 +2,7 @@
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background-color: #111111; /* change this value to change the colour of the bar on the homescreen */
+        background-color: #131313; /* change this value to change the colour of the bar on the homescreen */
       }
 
      
@@ -68,6 +68,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+text-align: center;
 }
 
 .left-container ul li a {
@@ -108,14 +109,16 @@
       color: black;
       font-size: 18px;
    }
-       #browse-header{ /* Header at top of browse section */
+       #browse-header{ 
       color: white;
      
       }
       
       a{
         font-size: 21px; /* browse section topics */
-      color: white;
+        color: white;
+	padding:10px 0; /* padding for white line */
+	border-bottom: 1px solid #444; /*adds white line under each ul item--#444 is colour of line */
       }
  
 
