@@ -54,7 +54,7 @@
    .left-container {
     width: 12%;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
