@@ -7,7 +7,7 @@
 
      
 .hero-space {
-    width: 100%;              /* full width of the screen */
+    width: 90%;              /* full width of the screen */
     height: 100vh;            /* full height of the viewport */
     background-color: #191919; /* the blank color you want */
     margin: 0;
