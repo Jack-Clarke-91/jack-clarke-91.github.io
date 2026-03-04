@@ -3,6 +3,7 @@
         padding: 0;
         font-family: Arial, sans-serif;
         background-color: #131313; /* change this value to change the colour of the bar on the homescreen */
+		overflow-x: hidden;  /* prevents horizontal scrolling as cards was creating a blank space on right side of screen */
       }
 
      
