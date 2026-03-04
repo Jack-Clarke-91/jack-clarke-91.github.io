@@ -115,6 +115,11 @@
     opacity: 1;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
       #header1 {
         position: absolute; /* locks the item in place on the page. Use fixed if it needs to be locked in place on the screen */
         top: 20px;
