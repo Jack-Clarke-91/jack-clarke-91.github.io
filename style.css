@@ -17,16 +17,17 @@
     flex-direction: column;   /* stack children vertically */
     justify-content: left;  /* vertically center content */
     align-items: left;      /* horizontally center content */
-   
+}
+
+
 
 .intro-line {  			 /* home page intro */
         font-family: Arial, sans-serif;
         position: relative; /* ensures it layers over .hero-space */
         text-align: centre;    
-	margin-top: 12vh; 
-	left: 5%; /* increases left margin size by 5% */
-	
-        color: white; /* blog post font colour */
+		margin-top: 12vh; 
+		left: 5%; /* increases left margin size by 5% */
+		color: white; /* blog post font colour */
       }
 
 .intro-line.main{		/* I have seperated intro line main & sub in HTML to change font size in CSS */
@@ -40,9 +41,6 @@
 	color: #777777;
 }
 
-}
-
-
 
 
 .cards-container {
@@ -50,8 +48,7 @@
     gap: 20px;
     flex-wrap: wrap;
     padding: 100px;
-    
-}
+    }
 
 .card {
     width: 325px;
@@ -120,7 +117,11 @@
   color: inherit;
   display: block;
 }
-      #header1 {
+     
+
+
+
+#header1 {
         position: absolute; /* locks the item in place on the page. Use fixed if it needs to be locked in place on the screen */
         top: 20px;
         left: 50%;
@@ -131,7 +132,8 @@
         font-size: 2.5em;
       }
       
-      #header2 {
+     
+#header2 {
         position: absolute;
         top: 280px;
         left: 50%;
@@ -157,7 +159,8 @@
       display: flex;
       }
 
-   .left-container { /* contains links to about, full blog, contact */
+  
+.left-container { /* contains links to about, full blog, contact */
     width: 12%;
     height: 100vh;
     position: absolute;
@@ -188,11 +191,11 @@ text-align: center;
 }
 
   a{
-        font-size: 21px; 
-        color: white;
+	font-size: 21px; 
+    color: white;
 	padding 10px 0; /* padding for white line */
 	border-bottom: 1px solid #444; /*adds white line under each ul item--#444 is colour of line */
-      }
+     }
  
 
 
@@ -201,7 +204,7 @@ text-align: center;
   width: 100%
  
 }
-	.post {   /* blog posts */
+	 .post {   /* blog posts */
         width: calc(90% - 90px);
         margin: 10px;
         background: #202020; /* blog post background colour */
@@ -211,14 +214,12 @@ text-align: center;
         color: #999999; /* blog post font colour */
       }
             ul {
-             
-              font-size: 21px; /* Adjust the desired font size for my months/year */
-              color: white;
+             font-size: 21px; /* Adjust the desired font size for my months/year */
+             color: white;
               }
             ul li a {
             display: inline-block;
-         
-            color: white; 
+         	color: white; 
     }
 
 /*
