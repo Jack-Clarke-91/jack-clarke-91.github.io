@@ -48,6 +48,7 @@
     gap: 20px;
     flex-wrap: wrap;
     padding: 100px;
+	align-items: stretch; 		/* tells all cards in the row to stretch to the height of the tallest card */
     }
 
 .card {
@@ -57,6 +58,8 @@
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+	display: flex; 				/* makes content of the cards display correctly when using 'stretch' in .cards-container */
+	flex-direction: column; 	/* makes content of the cards display correctly when using 'stretch' in .cards-container */
 }
 
 .card:hover {
