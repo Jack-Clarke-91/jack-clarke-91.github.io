@@ -124,7 +124,13 @@
   flex-direction: column;
   flex: 1;
 }
-     
+
+.card--large{
+	width: 400px;
+}
+.card--large{
+	height: 300px;
+}
 
 
 
