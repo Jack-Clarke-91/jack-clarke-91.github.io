@@ -129,7 +129,7 @@
 
 .card--large{	/* creating card--large in .html allows me to utilize and modify the attributes of .card without having to create a near identical class */
 width:775px; 	/* be sure to put secondary class (card--large) below the original class (.card) */
-margin-top: -40px;
+margin-top: -80px;   /* negative number moves margin farther up the page */
 }
 .card--large img{
 height: 450px;
