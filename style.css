@@ -64,6 +64,13 @@
 	flex: 1; /* makes the card fill its parent link's height */
 }
 
+.card--large{
+	width: 200px;
+}
+.card--large{
+	height: 200px;
+}
+
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
@@ -125,12 +132,6 @@
   flex: 1;
 }
 
-.card--large{
-	width: 400px;
-}
-.card--large{
-	height: 300px;
-}
 
 
 
