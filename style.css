@@ -127,6 +127,16 @@
   flex: 1;
 }
 
+.card--large{	/* creating card--large in .html allows me to utilize and modify the attributes of .card without having to create a near identical class */
+width:700px;	/* be sure to put secondary class (card--large) below the original class (.card) */
+}
+.card--large img{
+height: 500px;
+}
+.card--large:hover {
+    transform: none;
+    box-shadow: none;
+}
 
 
 
