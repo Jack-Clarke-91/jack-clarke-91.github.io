@@ -131,9 +131,9 @@
 width:750px;	/* be sure to put secondary class (card--large) below the original class (.card) */
 }
 .card--large img{
-height: 200px;
+height: 450px;
 }
-.card--large:hover .card--large desc {
+.card--large:hover {
     transform: none;
     box-shadow: none;
 }
