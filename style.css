@@ -218,14 +218,7 @@ text-align: center;
 	border-bottom: 1px solid #444; /*adds white line under each ul item--#444 is colour of line */
      }
 
- .left-container--home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    justify-content: flex-start; /* overrides the center alignment from .left-container */
-    padding: 10px;               /* small padding so logo isn't flush against the edge */
-}
+ 
 
 
 .right-container {
