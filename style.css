@@ -263,7 +263,8 @@ text-align: center;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-}
+    margin-top: 80px;
+    }
 
 .media-item {
     width: 400px;
