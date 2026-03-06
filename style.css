@@ -259,6 +259,24 @@ text-align: center;
          	color: white; 
     }
 
+    .media-container {      /* media container holds my media items, allowing me to have multiple pics/vids in a row */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.media-item {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.media-item img, /* comma allows me to apply this to both img and video */
+.media-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+    
 /*
       ul.black-list li {
       color: black;
