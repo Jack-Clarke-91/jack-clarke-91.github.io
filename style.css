@@ -230,6 +230,7 @@ text-align: center;
 
     .left-container--home img{ /* targetting the image directly to modify size */
         width: 250px;
+        height: 250px;
     }
 
 
