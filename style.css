@@ -263,11 +263,11 @@ text-align: center;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 80px;
+    margin-top: 80px; /* moves media items down the page, use negative number to move them up */
     }
 
 .media-item {
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
 }
 
