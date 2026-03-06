@@ -263,6 +263,7 @@ text-align: center;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 100px;
     margin-top: 80px; /* moves media items down the page, use negative number to move them up */
     }
 
