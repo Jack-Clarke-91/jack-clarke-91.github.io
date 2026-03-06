@@ -218,7 +218,11 @@ text-align: center;
 	border-bottom: 1px solid #444; /*adds white line under each ul item--#444 is colour of line */
      }
 
- 
+ .left-container--home {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 .right-container {
