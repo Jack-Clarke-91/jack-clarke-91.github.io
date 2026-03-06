@@ -267,11 +267,11 @@ text-align: center;
     }
 
 .media-item {
-    width: 490px;
+    width: 450px;
     margin: 0 auto;
 }
 
-.media-item img, /* comma allows me to apply this to both img and video */
+.media-item img, /* comma allows me to apply this to both img and video--note that img and video is targeting the img and video tags in html and applying rules to them */
 .media-item video {
     width: 100%;
     height: auto;
