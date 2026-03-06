@@ -207,11 +207,11 @@ text-align: center;
     font-size:28px;
 }
 
-.left-container ul li a:hover {
+.left-container ul li a:hover {   /* left-container unordered list list anchor:hover */
     color: #aaaaaa;
 }
 
- .left-container a{
+ .left-container a{     /* left container anchor rules here */
 	font-size: 21px; 
     color: white;
 	padding 10px 0; /* padding for white line */
@@ -223,8 +223,12 @@ text-align: center;
     top: 0;
     left: 0;
     width: 200px;
-    border-bottom: 0;
-}
+    
+    }
+
+    .left-container--home a { /* here I specifically target '.left-container home a' (a=anchor) to remove the 1px border-bottom line inherited from '.left-container home a' on my home logo anchor */
+    border-bottom: none;
+    }
 
 
 .right-container {
