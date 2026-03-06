@@ -261,13 +261,13 @@ text-align: center;
 
     .media-container {      /* media container holds my media items, allowing me to have multiple pics/vids in a row */
     display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     margin-top: 80px; /* moves media items down the page, use negative number to move them up */
     }
 
 .media-item {
-    width: 450px;
+    width: 490px;
     margin: 0 auto;
 }
 
