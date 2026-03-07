@@ -265,12 +265,14 @@ text-align: center;
     flex-wrap: wrap;
     padding: 100px;
     margin-top: 15px; /* moves media items down the page, use negative number to move them up */
-    align-items: stretch;
+    
     }
 
 .media-item {
     width: 450px;
+    height: 300px; /* must set height in this instance for compatibility with (object-fit:contain in media-item) to make all media the same size and allow black bars to fill empty space */
     margin: 0 auto;
+  background-color: black; /* this creates the black bars to fill empty space caused by forcing media to be the same size */
 }
 
 .media-item img, /* comma allows me to apply this to both img and video--note that img and video is targeting the img and video tags in html and applying rules to them */
@@ -278,6 +280,7 @@ text-align: center;
     width: 100%;
     height: auto;
     border-radius: 12px;
+    object-fit: contain; /* scales media to fit without cropping, black bars fill the space */
 }
     
 /*
