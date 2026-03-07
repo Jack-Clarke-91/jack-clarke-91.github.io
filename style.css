@@ -265,6 +265,7 @@ text-align: center;
     flex-wrap: wrap;
     padding: 100px;
     margin-top: 15px; /* moves media items down the page, use negative number to move them up */
+    align-items: stretch;
     }
 
 .media-item {
