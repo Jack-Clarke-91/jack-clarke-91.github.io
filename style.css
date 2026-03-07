@@ -281,6 +281,12 @@ text-align: center;
     border-radius: 12px;
     
 }
+.media-item--large{
+ width: 650px;
+ 
+}
+
+
     
 /*
       ul.black-list li {
