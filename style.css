@@ -254,8 +254,8 @@ width: 37px;
 }
 
 .right-container {
-  width: 80%;
-  margin-left:auto;
+  width: 90%; /* usually 100% */
+  margin-left:auto; /* I added this, delete it if it doesn't work */
   
  
 }
