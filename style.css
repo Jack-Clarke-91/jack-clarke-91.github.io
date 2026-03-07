@@ -238,7 +238,7 @@ text-align: center;
 .left-container--bottom{
 position: absolute;
 display: flex;
-padding: 10%;
+padding: 20%;
 gap: 10px;
 bottom: 0;
 left: 0;
