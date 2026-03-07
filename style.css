@@ -249,6 +249,9 @@ align-items: center;
 width: 40px;
 }
 
+.left-container--bottom a { 
+    border-bottom: none;
+}
 
 .right-container {
   width: 100%
