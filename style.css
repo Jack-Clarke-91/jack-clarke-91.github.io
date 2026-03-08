@@ -69,6 +69,8 @@
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    transform-origin: center;
+    isolation: isolate;
 }
 
 .card img {
@@ -124,7 +126,7 @@
   color: inherit;
   display: flex;
   flex-direction: column;
-  width: 325px;
+  flex: 1;
 }
 
 .card--large{	/* creating card--large in .html allows me to utilize and modify the attributes of .card without having to create a near identical class */
