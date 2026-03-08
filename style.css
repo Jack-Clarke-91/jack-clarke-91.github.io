@@ -236,7 +236,7 @@ text-align: center;
         
     }
     .left-container--home img:hover {
-    opacity: 0.8;        /* slight fade on hover-- homescreen logo */
+    opacity: 0.9;        /* slight fade on hover-- homescreen logo */
 }
 
 .left-container--bottom{
