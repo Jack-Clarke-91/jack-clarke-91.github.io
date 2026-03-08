@@ -235,6 +235,9 @@ text-align: center;
         width: 200px;
         
     }
+    .left-container--home img:hover {
+    opacity: 0.8;        /* slight fade on hover-- homescreen logo */
+}
 
 .left-container--bottom{
 position: absolute;
