@@ -61,16 +61,15 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 	display: flex; 				/* makes content of the cards display correctly when using 'stretch' in .cards-container */
 	flex-direction: column; 	/* makes content of the cards display correctly when using 'stretch' in .cards-container */
-	flex: 1; /* makes the card fill its parent link's height */
+	
 }
 
 
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-    transform-origin: center;
-    isolation: isolate;
+    transform: scale(1.05); /* how large of an increase in size the hovered object should have */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* adds shadow when hovered */
+   
 }
 
 .card img {
@@ -126,7 +125,7 @@
   color: inherit;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  
 }
 
 .card--large{	/* creating card--large in .html allows me to utilize and modify the attributes of .card without having to create a near identical class */
