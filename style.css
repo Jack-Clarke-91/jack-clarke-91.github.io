@@ -257,6 +257,10 @@ width: 37px;
     border-bottom: none;
 }
 
+.left-container--bottom img:hover {
+    opacity: 0.9;        /* slight fade on hover-- bottom left logos indeed, linkedin, tiktok */
+}
+
 .right-container {
   width: 87%; /* usually 100% */
   margin-left:auto; /* I added this, delete it if it doesn't work */
