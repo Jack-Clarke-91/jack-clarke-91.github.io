@@ -46,7 +46,7 @@
 
 .cards-container {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     flex-wrap: wrap;
     padding: 100px;
 	align-items: stretch; 		/* tells all cards in the row to stretch to the height of the tallest card */
@@ -55,10 +55,10 @@
 .card {
     width: 325px;
     background-color: #1e1e1e;
-    border-radius: 12px;
+    border-radius: 12px; /* creates rounded corners on the cards */
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animation for the hover shadow effect */
 	display: flex; 				/* makes content of the cards display correctly when using 'stretch' in .cards-container */
 	flex-direction: column; 	/* makes content of the cards display correctly when using 'stretch' in .cards-container */
 	
