@@ -42,15 +42,24 @@
 	color: #777777;
 }
 
-.about-container{
-width: 60%;
+
+.intro-line.about{    /* intro header for about me section */
+	font-size: 62px;
+	font-weight: 700;
+	margin-top: 26vh;
+	margin-left: 6%;
+}
+
+.about-container{     /* container for about me section */
+width: 65%;
+margin-left: 15%;
 
 }
 
-.about-post{
+.about-post{       /* post style for about me section */
 font-size:22px;
 line-height: 1.6;
-margin-top: 7px;
+margin-top: 15px;
 text-align: left;
 color: #777777;
 }
