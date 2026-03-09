@@ -53,7 +53,7 @@
    }
 
 .card {
-    width: 350px; /* was 325 */
+    width: 330px; /* was 325 */
     background-color: #1e1e1e;
     border-radius: 12px; /* creates rounded corners on the cards */
     overflow: hidden;
@@ -217,7 +217,7 @@ text-align: center;
     }
 
     .left-container--home img{ /* targetting the image directly to modify size */
-        width: 150px;
+        width: 175px; /* was 200 */
         
     }
     .left-container--home img:hover {
