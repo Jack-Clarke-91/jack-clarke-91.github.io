@@ -103,22 +103,7 @@
     border-radius: 999px;
 }
 
-/* Description hidden by default */
-.card-desc {
-    color: #aaa;
-    font-size: 13px;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    margin: 0;
-}
 
-/* Description reveals on hover */
-.card:hover .card-desc {
-    max-height: 100px;
-    opacity: 1;
-}
 
 .card-link {
   text-decoration: none;
