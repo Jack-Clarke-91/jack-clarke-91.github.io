@@ -64,6 +64,11 @@ text-align: left;
 color: #777777;
 }
 
+.form-container{
+    text-align: center;
+
+}
+
 .cards-container {
     display: flex;
     gap: 25px;
