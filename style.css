@@ -42,13 +42,19 @@
 	color: #777777;
 }
 
-.intro-line.about{
-font-size:26px;
+.about-container{
+width: 80%;
+max-width: 800px;
+margin-left: 5%;
+}
+
+.about-post{
+font-size:18px;
+line-height: 1.6;
 margin-top: 7px;
 text-align: left;
 color: #777777;
 }
-
 
 .cards-container {
     display: flex;
