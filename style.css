@@ -26,7 +26,7 @@
         font-family: Arial, sans-serif;
         position: relative; /* ensures it layers over .hero-space */
         text-align: centre;    
-		margin-top: 15vh; 
+		margin-top: 12vh; 
 		left: 5%; /* increases left margin size by 5% */
 		color: white; /* blog post font colour */
       }
