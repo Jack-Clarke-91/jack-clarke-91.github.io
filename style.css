@@ -330,9 +330,12 @@ width: 34px;
  
 }
 
+
 .scroll-logo{
 bottom:0;
 left:0;
+width:10px;
+height:auto;
 }
 
 
