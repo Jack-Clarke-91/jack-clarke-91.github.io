@@ -64,6 +64,13 @@ text-align: left;
 color: #777777;
 }
 
+.intro-line.contact{    /* intro header for about me section */
+	font-size: 62px;
+	font-weight: 700;
+	margin-top: 12vh;
+	margin-left: 6%;
+}
+
 .form-container{
     text-align: center;
     
