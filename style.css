@@ -332,6 +332,8 @@ width: 34px;
 
 .scroll-text{
 font-size: 2rem;
+position: fixed;
+bottom: 0;
 text-align: center;
 color: #777777
 }
