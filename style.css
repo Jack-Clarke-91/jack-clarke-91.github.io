@@ -276,7 +276,7 @@ width: 34px;
 }
 
 .left-container--bottom img:hover {
-    opacity: 0.9;        /* slight fade on hover-- bottom left logos indeed, linkedin, tiktok */
+    opacity: 0.8;        /* slight fade on hover-- bottom left logos indeed, linkedin, tiktok */
 }
 
 .right-container {
