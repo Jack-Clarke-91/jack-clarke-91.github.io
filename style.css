@@ -376,6 +376,8 @@ border-radius:12px
     .post--media{
 
         width: 500px;
+        margin:0;
+        padding:0;
     }
     
 /*
