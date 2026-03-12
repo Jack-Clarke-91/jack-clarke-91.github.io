@@ -373,6 +373,10 @@ border-radius:12px
     color: #999999
     }
 
+    .post--media{
+
+        width: 500px;
+    }
     
 /*
       ul.black-list li {
