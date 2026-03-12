@@ -373,7 +373,7 @@ border-radius:12px
     width: 450px;
     font-size: 18px;
      background: #202020; /* blog post background colour */
-      padding: 20px;
+    padding: 5px;
     box-sizing: border-box;
      border-radius: 12px;
     color: #999999
