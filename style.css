@@ -378,7 +378,7 @@ border-radius:12px
         width: 450px;
         margin: 4px;
         padding: 1%;
-        box-sizing: content-box;
+        box-sizing: 0;
         border-radius: 12px;
     }
   
