@@ -378,7 +378,7 @@ border-radius:12px
         width: 450px;
         margin: 0px;
         margin-top: 0;
-        padding: 0%;
+        padding: 0, 3px, 0, 3px;
         border-radius: 12px;
     }
     .figure{
