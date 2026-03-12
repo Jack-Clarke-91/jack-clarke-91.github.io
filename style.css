@@ -42,12 +42,6 @@
 	color: #777777;
 }
 
-.intro-line.photography{
-	font-size: 56px;
-	margin-top: 15px;
-    font-weight: 700; /* gap between bottom of .main and top of .sub */
-	color: #777777;
-}
 
 .intro-line.about{    /* intro header for about me section */
 	font-size: 62px;
