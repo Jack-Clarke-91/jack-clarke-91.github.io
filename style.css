@@ -308,7 +308,7 @@ width: 34px;
     gap: 20px;
     flex-wrap: wrap;
     padding: 100px;
-    margin-top: 15px; /* moves media items down the page, use negative number to move them up */
+    margin-top: 10px; /* moves media items down the page, use negative number to move them up */
     
     }
 
