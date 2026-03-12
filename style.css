@@ -378,12 +378,10 @@ border-radius:12px
         width: 450px;
         margin: 0px;
         margin-top: 0;
-        padding: 1px;
+        padding: 0 1px;
         border-radius: 12px;
     }
-    .figure{
-     margin: 0; /* removes default margin on all figure items */
-    }
+  
 /*
       ul.black-list li {
       color: black;
