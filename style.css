@@ -325,9 +325,13 @@ width: 34px;
     border-radius: 12px;
     
 }
-.media-item--large img{
+.media-item--large{ /* this expands the media-item container to match the image.Must have media-item--large and media-item--large img, without img width 100% the image will burst out of the container and not align properly */
  width: 550px;
+}
 
+.media-item--large img{
+ width: 100%;
+border-radius:12px
 }
 
 .scroll-text {
