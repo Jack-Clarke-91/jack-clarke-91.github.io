@@ -343,8 +343,14 @@ width: 34px;
  width: 100%;
  height: 350px;
  object-fit: cover;
-border-radius:12px
+border-radius:12px;
 }
+
+.media-item--webdev img{
+    width: 100%;
+    height: 450;
+    object-fit: cover;
+    border-radius: 12px;
 
 .scroll-text {
   font-size: 1.3m;
