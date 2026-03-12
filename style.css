@@ -376,8 +376,8 @@ border-radius:12px
     .post--media{
 
         width: 450px;
-        margin: 0px;;
-        padding: 0, 3, 0, 3px; /* top, right, bottom, left */
+        margin: 0px;
+        padding: 3px;
         border-radius: 12px;
     }
     
