@@ -346,6 +346,12 @@ width: 34px;
 border-radius:12px
 }
 
+.media-item--web{
+width: 600px;
+padding:13px;
+margin: 0;
+}
+
 .scroll-text {
   font-size: 1.3m;
   position: absolute;
