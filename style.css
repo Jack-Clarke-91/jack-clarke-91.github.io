@@ -368,19 +368,16 @@ border-radius:12px
   color: #777777;
 }
 
-.media-description {   /* under intro media posts */
-        width: 450px;
-        margin: 10px;
-        background: #202020; /* blog post background colour */
-        padding: 20px;
-        box-sizing: border-box;
-        font-size: 18px; 
-        color: #999999; /* blog post font colour */
-      }
 
 .below-image-text{
+    width: 450px;
     font-size: 18px;
+     background: #202020; /* blog post background colour */
+      padding: 20px;
+    box-sizing: border-box;
+     border-radius: 12px;
     color: #999999
+   
     }
 
    
