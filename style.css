@@ -381,7 +381,9 @@ border-radius:12px
         padding: 1%;
         border-radius: 12px;
     }
-    
+    .figure{
+     margin: 0; /* removes default margin on all figure items */
+    }
 /*
       ul.black-list li {
       color: black;
