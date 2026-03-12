@@ -335,13 +335,13 @@ width: 34px;
 
 .media-item--large{ /* this expands the media-item container to match the image.Must have media-item--large and media-item--large img, without img width 100% the image will burst out of the container and not align properly */
  width: 470px;
- padding: 5px;
- margin: 0;
+ padding: 10px;
+ margin-top: 10px;
 }
 
 .media-item--large img{
  width: 100%;
- height: 350px;
+ height: 325px;
  object-fit: cover;
 border-radius:12px;
 }
@@ -351,6 +351,8 @@ border-radius:12px;
     height: 450;
     object-fit: cover;
     border-radius: 12px;
+}
+
 
 .scroll-text {
   font-size: 1.3m;
