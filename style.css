@@ -329,8 +329,7 @@ width: 34px;
 .media-container--photo{ /* a modification of the media-container for the photography page, justify content center pulls everything together in the middle */
     justify-content: center;
     align-items: center;
-    gap:8px;
-    padding: 0 0 5px 0;
+   
 }
 
 .media-item--large{ /* this expands the media-item container to match the image.Must have media-item--large and media-item--large img, without img width 100% the image will burst out of the container and not align properly */
