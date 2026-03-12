@@ -342,7 +342,7 @@ width: 34px;
 .media-item--large img{
  width: 100%;
  height: 325px;
- object-fit: contain;
+ object-fit: fill;
 border-radius:12px
 }
 
@@ -359,10 +359,7 @@ border-radius:12px
 .below-image-text{
     font-size: 18px;
     color: #999999
-    
-
-
-}
+    }
 
     
 /*
