@@ -326,8 +326,9 @@ width: 34px;
     
 }
 .media-item--large{
- width: 600px;
- 
+ width: 550px;
+ margin: 0 auto;
+ border-radius: 12px;
 }
 
 .scroll-text {
