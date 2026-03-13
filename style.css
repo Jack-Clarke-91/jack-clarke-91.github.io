@@ -415,13 +415,8 @@ border-radius:12px
       z-index: 999;
     }
     .back-to-top img {
-        width: 45px;
-        height:60px;
-    filter: 
-    drop-shadow(2px 0 0 black)
-    drop-shadow(-2px 0 0 black)
-    drop-shadow(0 2px 0 black)
-    drop-shadow(0 -2px 0 black);
+        width: 40px;
+        height:55px;
     }
 
     .back-to-top:hover {
