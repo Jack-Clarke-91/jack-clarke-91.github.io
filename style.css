@@ -371,10 +371,10 @@ border-radius:12px
   font-weight: 700;
   bottom: 50px;
   text-shadow: 
-  -1px -1px 0 #131313,
-   1px -1px 0 #131313,
-  -1px  1px 0 #131313,
-   1px  1px 0 #131313;
+  -1px -1px 0 black,
+   1px -1px 0 black,
+  -1px  1px 0 black,
+   1px  1px 0 black;
   left: 0;
   right: 0;
   text-align: center;
@@ -409,7 +409,7 @@ border-radius:12px
      /* font-size: 18px;
       background-color: #0a2910;
       color: #999999; */
-      filter: drop-shadow(0 0 2px #131313);
+      filter: drop-shadow(0 0 5px black);
       padding: 1px;
       text-decoration: none;
       border-radius: 12px;
