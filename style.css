@@ -370,6 +370,11 @@ border-radius:12px
   position: absolute;
   font-weight: 700;
   bottom: 50px;
+  text-shadow: 
+  -1px -1px 0 black,
+   1px -1px 0 black,
+  -1px  1px 0 black,
+   1px  1px 0 black;
   left: 0;
   right: 0;
   text-align: center;
