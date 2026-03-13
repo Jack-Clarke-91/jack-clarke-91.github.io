@@ -410,10 +410,10 @@ border-radius:12px
       background-color: #0a2910;
       color: #999999; */
       filter: 
-  drop-shadow(2px 0 0 white)
-  drop-shadow(-2px 0 0 white)
-  drop-shadow(0 2px 0 white)
-  drop-shadow(0 -2px 0 white);
+  drop-shadow(2px 0 0 black)
+  drop-shadow(-2px 0 0 black)
+  drop-shadow(0 2px 0 black)
+  drop-shadow(0 -2px 0 black);
       padding: 1px;
       text-decoration: none;
       border-radius: 12px;
