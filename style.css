@@ -366,13 +366,14 @@ border-radius:12px
 }
 
 .scroll-text {
-  font-size: 1.3m;
+  font-size: 32px;
   position: absolute;
+  font-weight: 700;
   bottom: 20px;
   left: 0;
   right: 0;
   text-align: center;
-  color: #777777;
+  color: #0a2910;
 }
 
 
@@ -390,15 +391,7 @@ border-radius:12px
 
    
   
-/*
-      ul.black-list li {
-      color: black;
-      font-size: 18px;
-   }
-      
-   */  
-      
-    
+
 
 
     /*  Style for the Back to Top link */
