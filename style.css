@@ -405,7 +405,9 @@ border-radius:12px
     .back-to-top {
       position: sticky; /* behaves like position fixed but only within its parent container. Once the user is no longer in the parent container (right-container for my website) it dissapears */
       bottom: 30px;
-      left: 20px;
+      display: block;
+      width: fit-content; /* shrinks to content size */
+      margin-left: 20px; /* controls left spacing */
       font-size: 18px;
       background-color: #0a2910;
       color: #999999;
