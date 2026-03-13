@@ -42,6 +42,12 @@
 	color: #777777;
 }
 
+.intro-line.photo{
+	font-size: 48px;
+	margin-top: 5px; /* gap between bottom of .main and top of .sub */
+	color: #777777;
+}
+
 
 .intro-line.about{    /* intro header for about me section */
 	font-size: 62px;
