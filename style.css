@@ -413,7 +413,7 @@ border-radius:12px
       color: #999999; */
       padding: 1px;
       text-decoration: none;
-      border-radius: 1px;
+      border-radius: 12px;
       z-index: 999;
     }
     .back-to-top img {
