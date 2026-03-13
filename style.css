@@ -408,13 +408,17 @@ border-radius:12px
       display: block;
       width: fit-content; /* shrinks to content size */
       margin-left: -20px; /* controls left spacing */
-      font-size: 18px;
+     /* font-size: 18px;
       background-color: #0a2910;
-      color: #999999;
+      color: #999999; */
       padding: 10px;
       text-decoration: none;
       border-radius: 5px;
       z-index: 999;
+    }
+    .back-to-top img {
+        width: 30px;
+        height:30px;
     }
 
     .back-to-top:hover {
