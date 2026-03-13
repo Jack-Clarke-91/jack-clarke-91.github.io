@@ -409,11 +409,7 @@ border-radius:12px
      /* font-size: 18px;
       background-color: #0a2910;
       color: #999999; */
-      filter: 
-       drop-shadow(2px 0 0 #141414)
-       drop-shadow(-2px 0 0 #141414)
-       drop-shadow(0 2px 0 #141414)
-       drop-shadow(0 -2px 0 #141414);
+      box-shadow: 0 0 0 2px #141414;
       padding: 1px;
       text-decoration: none;
       border-radius: 12px;
