@@ -403,7 +403,7 @@ border-radius:12px
 
     /*  Style for the Back to Top link */
     .back-to-top {
-      position: fixed;
+      position: sticky; /* behaves like position fixed but only within its parent container. Once the user is no longer in the parent container (right-container for my website) it dissapears */
       bottom: 30px;
       left: 20px;
       font-size: 18px;
