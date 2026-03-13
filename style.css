@@ -407,7 +407,7 @@ border-radius:12px
       bottom: 30px;
       display: block;
       width: fit-content; /* shrinks to content size */
-      margin-left: 0px; /* controls left spacing */
+      margin-left: -20px; /* controls left spacing */
       font-size: 18px;
       background-color: #0a2910;
       color: #999999;
