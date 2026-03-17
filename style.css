@@ -362,7 +362,7 @@ border-radius:12px
 
     .media-item--web img{
      width: 100%;
-      height: 460px;
+      width: 600px;
        object-fit: fill;
        border-radius:12px
        }
