@@ -437,19 +437,19 @@ border-radius:12px
 
 
 @media (max-width: 768px) {
-  body { overflow-x: hidden; }
 
   .left-container {
     width: 100%;
     height: auto;
-    position: relative; /* overrides absolute */ 
-    top: auto; /* resets desktop top 0 */
-    left: auto; /* resets any left offset */
+    position: relative;
+    top: auto;
+    left: auto;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 12px 16px;
     border-bottom: 1px solid #333;
+    box-sizing: border-box;
   }
 
   .left-container ul {
@@ -462,26 +462,45 @@ border-radius:12px
 
   .left-container--home {
     position: relative;
+    top: auto;
+    left: auto;
     width: auto;
   }
 
-  .left-container--home img { width: 80px; }
+  .left-container--home img { width: 60px; }
 
   .left-container--bottom {
     position: relative;
-    padding: 0;
     bottom: auto;
     left: auto;
+    padding: 0;
+    gap: 10px;
   }
 
-  .hero-space, .right-container {
+  .left-container--bottom img { width: 24px; }
+
+  .hero-space {
     width: 100%;
     margin-left: 0;
+    height: auto;
   }
-}
 
+  .right-container {
+    width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
 
-@media (max-width: 768px) {
+  .post {
+    width: 100%;
+    margin: 0 0 10px 0;
+    box-sizing: border-box;
+  }
+
+  .blog {
+    padding: 0;
+  }
+
   .cards-container {
     padding: 20px;
     gap: 16px;
@@ -489,25 +508,28 @@ border-radius:12px
 
   .card { width: 100%; }
   .card--large { width: 100%; margin-top: 0; }
-}
 
-
-@media (max-width: 768px) {
   .media-container { padding: 20px; }
-  .media-item, .media-item--large, .media-item--web { width: 100%; }
-  .media-item--large img, .media-item--web img { height: auto; }
-}
 
+  .media-item,
+  .media-item--large,
+  .media-item--web {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+  }
 
-@media (max-width: 768px) {
-  .intro-line.main   { font-size: 40px; }
-  .intro-line.sub    { font-size: 20px; }
-  .intro-line.photo  { font-size: 28px; }
+  .media-item--large img,
+  .media-item--web img { height: auto; }
+
+  .below-image-text { width: 100%; box-sizing: border-box; }
+
+  .intro-line.main    { font-size: 40px; }
+  .intro-line.sub     { font-size: 20px; }
+  .intro-line.photo   { font-size: 28px; }
   .intro-line.about,
   .intro-line.contact { font-size: 36px; margin-left: 4%; margin-top: 10vh; }
 
   .about-container { width: 90%; margin-left: 5%; }
   .about-post { font-size: 17px; }
-
-  .post { width: 100%; margin: 0; }
 }
