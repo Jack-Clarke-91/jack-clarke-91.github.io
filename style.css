@@ -539,4 +539,6 @@ border-radius:12px
   .scroll-text {
   display: none !important;
 }
+
+.back-to-top:none;
 }
