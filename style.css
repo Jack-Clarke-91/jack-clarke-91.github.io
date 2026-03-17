@@ -435,7 +435,7 @@ border-radius:12px
 
 
 
-    
+
 @media (max-width: 768px) {
   body { overflow-x: hidden; }
 
@@ -479,7 +479,7 @@ border-radius:12px
 }
 
 
-css@media (max-width: 768px) {
+@media (max-width: 768px) {
   .cards-container {
     padding: 20px;
     gap: 16px;
@@ -490,14 +490,14 @@ css@media (max-width: 768px) {
 }
 
 
-css@media (max-width: 768px) {
+@media (max-width: 768px) {
   .media-container { padding: 20px; }
   .media-item, .media-item--large, .media-item--web { width: 100%; }
   .media-item--large img, .media-item--web img { height: auto; }
 }
 
 
-css@media (max-width: 768px) {
+@media (max-width: 768px) {
   .intro-line.main   { font-size: 40px; }
   .intro-line.sub    { font-size: 20px; }
   .intro-line.photo  { font-size: 28px; }
