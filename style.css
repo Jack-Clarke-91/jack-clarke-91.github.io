@@ -529,7 +529,14 @@ border-radius:12px
   .intro-line.photo   { font-size: 28px; }
   .intro-line.about,
   .intro-line.contact { font-size: 36px; margin-left: 4%; margin-top: 10vh; }
+  .intro-line {
+  margin-top: 4vh !important;
+}
 
   .about-container { width: 90%; margin-left: 5%; }
   .about-post { font-size: 17px; }
+  
+  .scroll-text {
+  display: none !important;
+}
 }
