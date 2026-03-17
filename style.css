@@ -442,7 +442,9 @@ border-radius:12px
   .left-container {
     width: 100%;
     height: auto;
-    position: relative;
+    position: relative; /* overrides absolute */ 
+    top: auto; /* resets desktop top 0 */
+    left: auto; /* resets any left offset */
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
