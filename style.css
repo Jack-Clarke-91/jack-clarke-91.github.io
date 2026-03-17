@@ -536,6 +536,11 @@ border-radius:12px
   .about-container { width: 90%; margin-left: 5%; }
   .about-post { font-size: 17px; }
   
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
   .back-to-top{
     display :none !important;
 }
