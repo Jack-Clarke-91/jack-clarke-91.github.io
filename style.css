@@ -480,8 +480,8 @@ border-radius:12px
   .left-container--bottom img { width: 24px; }
 
   .hero-space {
-    width: 100%;
-    margin-left: 0;
+    width: 100% !important;
+    margin-left: 0 !important;
     height: auto;
   }
 
