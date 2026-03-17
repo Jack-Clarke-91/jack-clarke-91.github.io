@@ -486,8 +486,8 @@ border-radius:12px
   }
 
   .right-container {
-    width: 100%;
-    margin-left: 0;
+    width: 100% !important;
+    margin-left: 0 !important;
     box-sizing: border-box;
   }
 
