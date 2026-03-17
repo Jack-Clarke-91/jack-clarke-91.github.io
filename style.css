@@ -525,7 +525,7 @@ border-radius:12px
   .below-image-text { width: 100%; box-sizing: border-box; }
 
   .intro-line.main    { font-size: 40px; }
-  .intro-line.sub { font-size: 20px; margin-top: -10px !important; }
+  .intro-line.sub { font-size: 20px; margin-top: -8px !important; }
   .intro-line.photo   { font-size: 28px; }
   .intro-line.about,
   .intro-line.contact { font-size: 36px; margin-left: 4%; margin-top: 10vh; }
