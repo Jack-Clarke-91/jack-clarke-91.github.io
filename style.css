@@ -422,3 +422,90 @@ border-radius:12px
       background-color: #202020;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+@media (max-width: 768px) {
+  body { overflow-x: hidden; }
+
+  .left-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #333;
+  }
+
+  .left-container ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .left-container ul li a { font-size: 16px; }
+
+  .left-container--home {
+    position: relative;
+    width: auto;
+  }
+
+  .left-container--home img { width: 80px; }
+
+  .left-container--bottom {
+    position: relative;
+    padding: 0;
+    bottom: auto;
+    left: auto;
+  }
+
+  .hero-space, .right-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+
+css@media (max-width: 768px) {
+  .cards-container {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .card { width: 100%; }
+  .card--large { width: 100%; margin-top: 0; }
+}
+
+
+css@media (max-width: 768px) {
+  .media-container { padding: 20px; }
+  .media-item, .media-item--large, .media-item--web { width: 100%; }
+  .media-item--large img, .media-item--web img { height: auto; }
+}
+
+
+css@media (max-width: 768px) {
+  .intro-line.main   { font-size: 40px; }
+  .intro-line.sub    { font-size: 20px; }
+  .intro-line.photo  { font-size: 28px; }
+  .intro-line.about,
+  .intro-line.contact { font-size: 36px; margin-left: 4%; margin-top: 10vh; }
+
+  .about-container { width: 90%; margin-left: 5%; }
+  .about-post { font-size: 17px; }
+
+  .post { width: 100%; margin: 0; }
+}
