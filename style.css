@@ -540,6 +540,10 @@ border-radius:12px
   max-width: 100%;
   box-sizing: border-box;
 }
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
 
   .back-to-top{
     display :none !important;
