@@ -353,7 +353,7 @@ border-radius:12px
 }
 
 .media-item--web{
-    width: 620px;
+    width: 720px;
     padding:5px;
     margin: 0 auto; /* this centers the container */
     margin-left:0;
@@ -362,7 +362,7 @@ border-radius:12px
 
     .media-item--web img{
      width: 100%;
-      width: 600px;
+      height: 460px;
        object-fit: fill;
        border-radius:12px
        }
