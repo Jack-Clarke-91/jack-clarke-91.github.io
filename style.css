@@ -302,11 +302,12 @@ width: 34px;
       }
             ul {
              font-size: 21px; /* Adjust the desired font size for my months/year */
-             color: white;
+             color: #999999;
               }
             ul li a {
             display: inline-block;
-         	color: white; 
+            font-weight: normal;
+         	color: #999999; 
     }
 
     .media-container {      /* media container holds my media items, allowing me to have multiple pics/vids in a row */
