@@ -11,6 +11,9 @@
     width: 87%;              /* 87% width of the screen */
     height: 100vh;            /* full height of the viewport */
     background-color: #141414; /* blank colour hexadecimal */
+      
+      background-image: radial-gradient(#191919 1px, transparent 1px);
+      background-size: 20px 20px;
     margin-left: auto; /* puts the remaining 13% on the left side of screen */
     padding: 0;
     box-sizing: border-box;
