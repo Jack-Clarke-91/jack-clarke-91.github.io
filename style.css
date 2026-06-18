@@ -95,7 +95,7 @@ color: #777777;
    }
 
 .card {
-  width: 290px; /* was 330px for four cards. Decreased to accomodate a fith card. */
+  width: 280px; /* was 330px for four cards. Decreased to accomodate a fith card. */
   background-color: #1e1e1e;
   border-radius: 12px; /* creates rounded corners on the cards */
   overflow: hidden;
