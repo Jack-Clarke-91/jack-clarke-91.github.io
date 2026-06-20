@@ -95,15 +95,14 @@ color: #777777;
    }
 
 .card {
-  width: 270px; /* was 330px for four cards. Decreased to accomodate a fith card. */
+  width: 330px; /* used everywhere by default but will have an override for homescreen to fit 5 fixed cards */
   background-color: #1e1e1e;
-  border-radius: 12px; /* creates rounded corners on the cards */
+  border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animation for the hover shadow effect */
-	display: flex; 				/* makes content of the cards display correctly when using 'stretch' in .cards-container */
-	flex-direction: column; 	/* makes content of the cards display correctly when using 'stretch' in .cards-container */
-	
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 
