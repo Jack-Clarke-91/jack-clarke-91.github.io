@@ -172,20 +172,27 @@ color: #777777;
   
 }
 
-.card--large{	/* creating card--large in .html allows me to utilize and modify the attributes of .card without having to create a near identical class */
-  width:775px; 	/* be sure to put secondary class (card--large) below the original class (.card) */
-  margin-top: -80px;   /* negative number moves margin farther up the page */
+.cards-container--large {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* always 3 equal columns = 2 rows for 6 cards */
+  gap: 25px;
+  padding: 60px 50px;
 }
 
-.card--large img{
-  height: 450px;
-	
-}
-.card--large:hover {
-    transform: none;
-    box-shadow: none;
+.cards-container--large .card-link {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
 }
 
+.card--large {
+  width: 100%;         /* fill the grid cell instead of fixed 775px */
+  margin-top: 0;        /* remove the -80px hack, no longer needed with grid */
+}
+
+.card--large img {
+  height: 450px;        /* keep this fixed height, or see note below */
+}
 
 
 #header1 {
