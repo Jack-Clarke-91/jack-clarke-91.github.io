@@ -94,8 +94,8 @@ color: #777777;
 	
    }
 
+
 .card {
-  width: 330px; /* used everywhere by default but will have an override for homescreen to fit 5 fixed cards */
   background-color: #1e1e1e;
   border-radius: 12px;
   overflow: hidden;
@@ -103,9 +103,26 @@ color: #777777;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  width: 330px; /* fallback default, overridden below per page */
 }
 
+/* Home — always 5 across */
+.cards-container--home .card {
+  flex: 0 0 calc((100% - (25px * 4)) / 5);
+  width: auto; /* let flex-basis control width instead of fixed px */
+}
 
+/* Standard pages — always 3 across */
+.cards-container--standard .card {
+  flex: 0 0 calc((100% - (25px * 2)) / 3);
+  width: auto;
+}
+
+/* Photography — always 3 across, wraps to 2 rows for 6 cards */
+.cards-container--photo .card {
+  flex: 0 0 calc((100% - (25px * 2)) / 3);
+  width: auto;
+}
 
 .card:hover {
     transform: scale(1.05); /* how large of an increase in size the hovered object should have */
