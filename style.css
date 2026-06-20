@@ -107,10 +107,21 @@ color: #777777;
   justify-content: center;
 }
 
+.cards-container--home {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* always exactly 5 equal columns */
+  gap: 25px;
+  padding: 60px 50px;
+}
+
 .cards-container--home .card-link {
-  flex: 0 0 calc((100% - (25px * 4)) / 5);
-  max-width: 280px;
+  width: 100%;   /* fill the grid cell */
+  max-width: none; /* remove the old max-width that was causing narrow/tall cards */
   min-width: 0;
+}
+
+.cards-container--home .card {
+  width: 100%;   /* let the card fill its grid cell instead of the fixed 330px fallback */
 }
 
 
