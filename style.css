@@ -337,49 +337,44 @@ width: 34px;
          	color: #999999; 
     }
 
-    .media-container {      /* media container holds my media items, allowing me to have multiple pics/vids in a row */
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 50px 100px 100px 100px; /* top, right, bottom, left adjustment for padding around media items */
-    margin-top: 10px; /* moves media items down the page, use negative number to move them up */
-    
-    }
+   .media-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* always 3 equal columns */
+  gap: 20px;
+  padding: 50px 100px 100px 100px;
+  margin-top: 10px;
+}
 
 .media-item {
-    width: 450px;
-    margin: 0 auto;
-  
+  width: 100%;   /* fill the grid cell instead of fixed 450px */
+  margin: 0;      /* margin: 0 auto isn't needed inside a grid cell */
 }
 
-.media-item img, /* comma allows me to apply this to both img and video--note that img and video is targeting the img and video tags in html and applying rules to them */
+.media-item img,
 .media-item video {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
-.media-container--photo{ /* a modification of the media-container for the photography page, justify content center pulls everything together in the middle */
-    justify-content: center;
-    align-items: center;
-    gap:0px;
-    padding: 0 0 0px 0;
+.media-container--photo {
+  grid-template-columns: repeat(3, 1fr); /* same 3-column logic for photo page */
+  gap: 20px; /* was 0 before — see note below */
+  padding: 0 0 0px 0;
 }
 
-.media-item--large{ /* this expands the media-item container to match the image.Must have media-item--large and media-item--large img, without img width 100% the image will burst out of the container and not align properly */
- width: 470px;
- padding: 13px;
- margin: 0;
+.media-item--large {
+  width: 100%;   /* fill the grid cell instead of fixed 470px */
+  padding: 13px;
+  margin: 0;
 }
 
-.media-item--large img{
- width: 100%;
- height: 325px;
- object-fit: fill;
-border-radius:12px
+.media-item--large img {
+  width: 100%;
+  height: 325px;
+  object-fit: fill;
+  border-radius: 12px;
 }
-
 .media-item--web{
     width: 690px;
     padding:5px;
