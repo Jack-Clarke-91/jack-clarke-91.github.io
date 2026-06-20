@@ -104,6 +104,13 @@ color: #777777;
   flex-direction: column;
 }
 
+.cards-container--home .card,
+.cards-container--standard .card,
+.cards-container--photo .card {
+  width: 100%;
+}
+
+
 /* NEW — add these in addition, don't replace anything above */
 .cards-container--home .card-link {
   flex: 0 0 calc((100% - (25px * 4)) / 5);
