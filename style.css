@@ -450,23 +450,6 @@ width: 34px;
 
 
 
-@media (max-width: 768px) {
-/* this block forces clean card stacking on mobile. Temporary fix for cards not sizing correctly */
-  .cards-container {
-    flex-direction: column; /* forces clean stacking */
-    padding: 20px;
-  }
-
-  .card {
-    width: 100%; /* forces ALL cards full width */
-  }
-
-  .card-link {
-    width: 100%;
-    display: block;
-  }
-}
-
 
 
 
