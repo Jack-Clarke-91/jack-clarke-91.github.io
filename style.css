@@ -495,7 +495,7 @@ width: 34px;
     width: auto;
   }
 
-  .left-container--home img { width: 75px; } /* was 60px */
+  .left-container--home img { width: 75px; } /* JC Logo size */ 
 
   .left-container--bottom {
     position: relative;
@@ -505,7 +505,7 @@ width: 34px;
     gap: 10px;
   }
 
-  .left-container--bottom img { width: 20px; } /* was 24px */
+  .left-container--bottom img { width: 22px; } /* Socials logo size */
 
   .hero-space {
     width: 100% !important;
