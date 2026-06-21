@@ -365,6 +365,10 @@ width: 34px;
   padding: 0 0 0px 0;
 }
 
+.media-container--web {
+  grid-template-columns: repeat(2, 1fr); /* only 2 images on this page, so 2 columns instead of the default 3 */
+}
+
 .media-item--large {
   width: 100%;
   padding: 13px;
@@ -410,20 +414,7 @@ width: 34px;
   color: #0a2910;
 }
 
-/*
-.below-image-text{
-    width: 450px;
-    font-size: 18px;
-     background: #202020; /* blog post background colour 
-    padding: 8px;
-    box-sizing: border-box;
-    margin-top: 5px;
-     border-radius: 12px;
-    color: #999999
-   
-    }
 
-   */
 .below-image-text{
     width: 100%; /* always fills the media-item, no more fixed 450px cap */
     font-size: 18px;
