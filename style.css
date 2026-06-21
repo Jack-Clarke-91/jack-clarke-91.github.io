@@ -460,34 +460,34 @@ width: 34px;
 
 
 /* this block scales for laptop screens */
-
 @media (max-height: 800px) {
   .intro-line.main {
     margin-top: 4vh;
     font-size: 52px;
   }
-
   .intro-line.sub {
     margin-top: 0px;
     font-size: 24px;
   }
-
   .media-container {
     padding-top: 15px;
     padding-bottom: 25px;
   }
-
   .cards-container--home {
     padding-top: 80px;
   }
-
-   .media-container--photo {
+  .media-container--photo {
     margin-top: -30px;
     gap: 2px; /* was 20px, then 10px — tighter still */
-  
+  }
+  .media-item--web {
+    width: 100%; /* was: 690px — now shrinks to fit its grid column instead of overflowing on narrower screens */
+    padding: 5px;
+    margin: 0 auto;
+    margin-left: 0;
+    box-sizing: border-box; /* keeps padding INSIDE the width instead of adding to it */
   }
 }
-
 
 
 /* this block scales for phone screens */
