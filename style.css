@@ -460,6 +460,20 @@ width: 34px;
 
 
 
+@media (max-height: 800px) {
+  .intro-line.main {
+    margin-top: 6vh; /* was 12vh — laptops have less vertical room, so reduce the gap above the title */
+  }
+
+  .media-container {
+    padding-top: 25px;    /* was 50px */
+    padding-bottom: 40px; /* was 100px */
+  }
+}
+
+
+
+
 
 
 
@@ -493,7 +507,7 @@ width: 34px;
     top: auto;
     left: auto;
     width: auto;
-	gap: 10px; /* remove if necessary */
+	 margin-right: 10px;
   }
 
   .left-container--home img { width: 75px; } /* JC Logo size */ 
