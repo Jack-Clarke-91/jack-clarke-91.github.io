@@ -540,8 +540,13 @@ width: 34px;
     grid-template-columns: 1fr; /* collapses the 5-column grid into a single column */
   }
 
-  .media-container { padding: 10px !important; }
-
+ 
+	
+.media-container {
+    padding: 10px !important;
+    grid-template-columns: 1fr; /* collapses the 3-column grid into a single column on mobile, same approach as .cards-container--home */
+  }
+	
   .media-item,
   .media-item--large,
   .media-item--web {
