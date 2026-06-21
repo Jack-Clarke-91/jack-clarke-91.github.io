@@ -110,7 +110,7 @@ color: #777777;
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* always exactly 5 equal columns */
   gap: 25px;
-  padding: 160px 50px 60px 50px; /* originally: padding: 60px 50px; */
+  padding: 122px 50px 60px 50px; /* was 160px — moved up ~1cm now that laptop has its own separate override */
 }
 
 .cards-container--home .card-link {
