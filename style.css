@@ -493,6 +493,7 @@ width: 34px;
     top: auto;
     left: auto;
     width: auto;
+	gap: 10px; /* remove if necessary */
   }
 
   .left-container--home img { width: 75px; } /* JC Logo size */ 
