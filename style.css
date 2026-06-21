@@ -420,7 +420,7 @@ width: 34px;
   position: absolute;
   font-weight: 700;
   bottom: 50px;
-  right: 50px; /* controls distance from right edge */
+  right: 5px; /* controls distance from right edge */
 
   text-shadow:
   -2px -2px 0 #131313,
