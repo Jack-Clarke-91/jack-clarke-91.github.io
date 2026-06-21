@@ -10,6 +10,7 @@
 .hero-space {
     width: 87%;              /* 87% width of the screen */
     min-height: 100vh;            /* was: height: 100vh — now grows taller than one viewport if content needs more room, instead of clipping/overlapping the blog section below it */
+    position: relative;       /* makes .scroll-text anchor to the bottom of THIS box (which can now grow) instead of the viewport, which was causing the cut-off text */
     background-color: #141414; /* blank colour hexadecimal */
     background-image: radial-gradient(#191919 1px, transparent 1px); /* adds subtle dots gradient to hero-space */
     background-size: 20px 20px; /* changes the spacing of the dotted gradient background */
