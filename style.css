@@ -397,7 +397,7 @@ width: 34px;
        object-fit: fill;
        border-radius:12px
        }
-
+/*
 .scroll-text {
   font-size: 32px;
   position: absolute;
@@ -413,7 +413,23 @@ width: 34px;
   text-align: center;
   color: #0a2910;
 }
+*/
 
+.scroll-text {
+  font-size: 32px;
+  position: absolute;
+  font-weight: 700;
+  bottom: 50px;
+  right: 50px; /* controls distance from right edge */
+
+  text-shadow:
+  -2px -2px 0 #131313,
+   2px -2px 0 #131313,
+  -2px  2px 0 #131313,
+   2px  2px 0 #131313;
+
+  color: #0a2910;
+}
 
 .below-image-text{
     width: 100%; /* always fills the media-item, no more fixed 450px cap */
