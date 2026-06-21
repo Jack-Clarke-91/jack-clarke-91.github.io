@@ -423,20 +423,16 @@ width: 34px;
     }
 
    */
-  
 .below-image-text{
-    width: 450px;
-    max-width: 100%; /* lets the text box shrink to fit its grid column on narrower screens instead of overflowing */
+    width: 100%; /* always fills the media-item, no more fixed 450px cap */
     font-size: 18px;
-     background: #202020;
+    background: #202020;
     padding: 8px;
     box-sizing: border-box;
     margin-top: 5px;
-     border-radius: 12px;
-    color: #999999
-   
-    }
-
+    border-radius: 12px;
+    color: #999999;
+}
 
     /*  Style for the Back to Top link */
     .back-to-top {
