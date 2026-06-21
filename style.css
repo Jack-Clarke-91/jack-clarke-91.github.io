@@ -459,17 +459,21 @@ width: 34px;
 
 
 
-
+/* this block scales the content for laptop screens */
 
 @media (max-height: 800px) {
   .intro-line.main {
     margin-top: 4vh;
-    font-size: 52px; /* was 76px — much less vertical space taken by the header on shorter screens */
+    font-size: 52px;
   }
 
   .intro-line.sub {
     margin-top: 0px;
-    font-size: 24px; /* was 32px — scales down to match the smaller header */
+    font-size: 24px;
+  }
+
+  .intro-line.photo {
+    margin-top: 25px; /* was 60px — tighter gap above the photo grid heading on shorter screens */
   }
 
   .media-container {
@@ -484,7 +488,7 @@ width: 34px;
 
 
 
-
+/* this block scales the content for mobile sized screens */
 
 @media (max-width: 768px) {
 
