@@ -457,20 +457,16 @@ width: 34px;
 
 
 
-That's exactly it. When pasting the new font-size header block in, the original @media (max-width: 768px) { opening line got accidentally deleted along with it — its closing } is still there at the very end of the file, but nothing opens it anymore.
-The result: every rule meant to be mobile-only (.hero-space { width: 100% !important; }, .left-container--home img { width: 75px; }, .intro-line.main { font-size: 40px; }, the single-column grid collapses, etc.) is now sitting completely unguarded at global scope, applying to every screen size all the time — desktop, laptop, everything. That's exactly why the whole site "blew up" — mobile-only overrides are now permanently active everywhere.
-Also worth noting: you've now got two duplicate @media (max-height: 800px) blocks (Block A and Block B) doing almost the same thing — Block B just adds font-size on top. Let's merge those into one clean block while we're fixing this.
-Fix — replace everything from the laptop block down to the end of the file with this:
-css/* This @media block scales the content to fit laptops and smaller resolution devices */
+
+
+/* This @media block scales the content to fit laptops and smaller resolution devices */
 @media (max-height: 800px) {
   .intro-line.main {
     margin-top: 4vh; /* was 6vh, then 12vh originally — trimmed further since text was still slightly cut off */
-    font-size: 52px; /* was 76px — much less vertical space taken by the header on shorter screens */
   }
 
   .intro-line.sub {
     margin-top: 0px; /* was 5px — tiny extra trim */
-    font-size: 24px; /* was 32px — scales down to match the smaller header */
   }
 
   .media-container {
@@ -484,28 +480,31 @@ css/* This @media block scales the content to fit laptops and smaller resolution
 }
 
 
+
+
+
+
 /* This @media block scales the content for phone screens */
-@media (max-width: 768px) {
-
-  .left-container {
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: auto;
-    left: auto;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 12px 16px;
-    border-bottom: 1px solid #333;
-    box-sizing: border-box;
+@media (max-height: 800px) {
+  .intro-line.main {
+    margin-top: 4vh;
+    font-size: 52px; /* was 76px — much less vertical space taken by the header on shorter screens */
   }
 
-  .left-container ul {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
+  .intro-line.sub {
+    margin-top: 0px;
+    font-size: 24px; /* was 32px — scales down to match the smaller header */
   }
+
+  .media-container {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+
+  .cards-container--home {
+    padding-top: 80px;
+  }
+}
 
   .left-container ul li a { font-size: 16px; }
 
@@ -514,10 +513,10 @@ css/* This @media block scales the content to fit laptops and smaller resolution
     top: auto;
     left: auto;
     width: auto;
-    margin-right: 10px;
+	 margin-right: 10px;
   }
 
-  .left-container--home img { width: 75px; } /* JC Logo size */
+  .left-container--home img { width: 75px; } /* JC Logo size */ 
 
   .left-container--bottom {
     position: relative;
@@ -558,15 +557,17 @@ css/* This @media block scales the content to fit laptops and smaller resolution
 
   .card { width: 100%; }
   .card--large { width: 100%; margin-top: 0; }
-  .cards-container--home {
+	  .cards-container--home {
     grid-template-columns: 1fr; /* collapses the 5-column grid into a single column */
   }
 
-  .media-container {
+ 
+	
+.media-container {
     padding: 10px !important;
     grid-template-columns: 1fr; /* collapses the 3-column grid into a single column on mobile, same approach as .cards-container--home */
   }
-
+	
   .media-item,
   .media-item--large,
   .media-item--web {
