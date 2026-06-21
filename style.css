@@ -481,9 +481,10 @@ width: 34px;
     padding-top: 80px;
   }
 
-  .media-container--photo {
+   .media-container--photo {
     margin-top: -20px;
-    gap: 10px; /* was 20px — tighter gap between the two photo rows on shorter laptop screens */
+    gap: 4px; /* was 20px, then 10px — tighter still */
+  
   }
 }
 
