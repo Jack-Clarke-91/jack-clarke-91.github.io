@@ -366,17 +366,19 @@ width: 34px;
 }
 
 .media-item--large {
-  width: 100%;   /* fill the grid cell instead of fixed 470px */
+  width: 100%;
   padding: 13px;
   margin: 0;
+  box-sizing: border-box; /* keeps padding INSIDE the 100% width instead of adding to it, which was pushing the last column past the edge of the screen */
 }
 
 .media-item--large img {
   width: 100%;
-  height: 325px;
-  object-fit: fill;
+  aspect-ratio: 3 / 2; /* was: height: 325px — now scales proportionally with column width instead of a fixed pixel height */
+  object-fit: cover;   /* was: fill — crops to fill the frame instead of stretching/distorting */
   border-radius: 12px;
 }
+
 .media-item--web{
     width: 690px;
     padding:5px;
@@ -577,7 +579,7 @@ width: 34px;
   }
 
   .media-item--large img,
-  .media-item--web img { height: auto; }
+  .media-item--web img { aspect-ratio: 3 / 2; } /* was: height: auto — keeps the 3:2 ratio consistent on mobile too */
 
   .below-image-text { width: 100%; box-sizing: border-box; }
 
