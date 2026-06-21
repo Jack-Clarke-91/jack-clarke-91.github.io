@@ -483,7 +483,7 @@ width: 34px;
 
    .media-container--photo {
     margin-top: -30px;
-    gap: 4px; /* was 20px, then 10px — tighter still */
+    gap: 2px; /* was 20px, then 10px — tighter still */
   
   }
 }
