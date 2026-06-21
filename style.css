@@ -459,20 +459,26 @@ width: 34px;
 
 
 
-
 @media (max-height: 800px) {
   .intro-line.main {
-    margin-top: 6vh; /* was 12vh — laptops have less vertical room, so reduce the gap above the title */
+    margin-top: 4vh;
+    font-size: 52px; /* was 76px — much less vertical space taken by the header on shorter screens */
+  }
+
+  .intro-line.sub {
+    margin-top: 0px;
+    font-size: 24px; /* was 32px — scales down to match the smaller header */
   }
 
   .media-container {
-    padding-top: 25px;    /* was 50px */
-    padding-bottom: 40px; /* was 100px */
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+
+  .cards-container--home {
+    padding-top: 80px;
   }
 }
-
-
-
 
 
 
