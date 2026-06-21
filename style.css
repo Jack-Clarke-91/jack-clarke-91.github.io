@@ -464,12 +464,12 @@ width: 34px;
 @media (max-height: 800px) {
   .intro-line.main {
     margin-top: 4vh;
-    font-size: 52px; /* was 76px — much less vertical space taken by the header on shorter screens */
+    font-size: 52px;
   }
 
   .intro-line.sub {
     margin-top: 0px;
-    font-size: 24px; /* was 32px — scales down to match the smaller header */
+    font-size: 24px;
   }
 
   .media-container {
@@ -479,6 +479,10 @@ width: 34px;
 
   .cards-container--home {
     padding-top: 80px;
+  }
+
+  .media-container--photo {
+    margin-top: -20px; /* pulls the photo grid up closer to the header on shorter laptop screens, without moving the header itself */
   }
 }
 
