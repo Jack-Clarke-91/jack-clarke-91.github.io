@@ -459,15 +459,23 @@ width: 34px;
 
 
 
-
+/* This @media block scales the content to fit laptops and smaller resolution devices */
 @media (max-height: 800px) {
   .intro-line.main {
-    margin-top: 6vh; /* was 12vh — laptops have less vertical room, so reduce the gap above the title */
+    margin-top: 4vh; /* was 6vh, then 12vh originally — trimmed further since text was still slightly cut off */
+  }
+
+  .intro-line.sub {
+    margin-top: 0px; /* was 5px — tiny extra trim */
   }
 
   .media-container {
-    padding-top: 25px;    /* was 50px */
-    padding-bottom: 40px; /* was 100px */
+    padding-top: 15px;    /* was 25px */
+    padding-bottom: 25px; /* was 40px */
+  }
+
+  .cards-container--home {
+    padding-top: 80px; /* was 160px — the home cards were pushed down 2.6cm for desktop, but that's too much on a shorter laptop screen */
   }
 }
 
@@ -476,8 +484,7 @@ width: 34px;
 
 
 
-
-
+/* This @media block scales the content for phone screens */
 @media (max-width: 768px) {
 
   .left-container {
