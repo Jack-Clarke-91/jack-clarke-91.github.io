@@ -9,7 +9,7 @@
      
 .hero-space {
     width: 87%;              /* 87% width of the screen */
-    height: 100vh;            /* full height of the viewport */
+    min-height: 100vh;            /* was: height: 100vh — now grows taller than one viewport if content needs more room, instead of clipping/overlapping the blog section below it */
     background-color: #141414; /* blank colour hexadecimal */
     background-image: radial-gradient(#191919 1px, transparent 1px); /* adds subtle dots gradient to hero-space */
     background-size: 20px 20px; /* changes the spacing of the dotted gradient background */
@@ -21,8 +21,6 @@
     justify-content: left;  /* vertically center content */
     align-items: left;      /* horizontally center content */
 }
-
-
 
 .intro-line {  			 /* home page intro */
     font-family: Arial, sans-serif;
