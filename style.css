@@ -459,7 +459,7 @@ width: 34px;
 
 
 
-
+/* this block scales for laptop screens */
 
 @media (max-height: 800px) {
   .intro-line.main {
@@ -482,13 +482,14 @@ width: 34px;
   }
 
   .media-container--photo {
-    margin-top: -20px; /* pulls the photo grid up closer to the header on shorter laptop screens, without moving the header itself */
+    margin-top: -20px;
+    gap: 10px; /* was 20px — tighter gap between the two photo rows on shorter laptop screens */
   }
 }
 
 
 
-
+/* this block scales for phone screens */
 
 @media (max-width: 768px) {
 
