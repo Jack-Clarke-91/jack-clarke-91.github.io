@@ -593,7 +593,16 @@ width: 34px;
 
   .media-item--large img,
   .media-item--web img { aspect-ratio: 3 / 2; } /* was: height: auto — keeps the 3:2 ratio consistent on mobile too */
+  .media-container--web {
+  grid-template-columns: 1fr; /* stack web images vertically on mobile */
+    padding: 10px;
+  }
 
+  .media-item--web img {
+    height: auto;
+    aspect-ratio: 16 / 9; /* natural widescreen ratio for website screenshots */
+    object-fit: cover;
+  }
   .below-image-text { width: 100%; box-sizing: border-box; }
 
   .intro-line.main    { font-size: 40px; }
