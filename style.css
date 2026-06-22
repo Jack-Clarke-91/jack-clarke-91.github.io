@@ -547,6 +547,7 @@ width: 34px;
     width: 100% !important;
     margin-left: 0 !important;
     height: auto;
+	min-height: unset; /* ← add this */
   }
 
   .right-container {
