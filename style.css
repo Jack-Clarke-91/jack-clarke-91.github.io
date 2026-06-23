@@ -3,7 +3,7 @@
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #131313; /* change this value to change the colour of the bar on the homescreen */
-		overflow-x: hidden;  /* prevents horizontal scrolling as cards was creating a blank space on right side of screen */
+	overflow-x: hidden;  /* prevents horizontal scrolling as cards was creating a blank space on right side of screen */
 }
 
      
@@ -27,9 +27,9 @@
     font-family: Arial, sans-serif;
     position: relative; /* ensures it layers over .hero-space */
     text-align: centre;    
-		margin-top: 12vh; 
-		left: 5%; /* increases left margin size by 5% */
-		color: white; /* blog post font colour */
+	margin-top: 12vh; 
+	left: 5%; /* increases left margin size by 5% */
+	color: white; /* blog post font colour */
 }
 
 .intro-line.main{		/* I have seperated intro line main & sub in HTML to change font size in CSS */
@@ -80,9 +80,7 @@ color: #777777;
 
 .form-container{
     text-align: center;
-    
-
-}
+    }
 
 
 
@@ -161,8 +159,6 @@ color: #777777;
     border-radius: 999px;
 }
 
-
-
 .card-link {
   text-decoration: none;
   color: inherit;
@@ -192,6 +188,11 @@ color: #777777;
 .card--large img {
   height: 450px;        /* keep this fixed height, or see note below */
 }
+
+
+
+
+
 
 
 #header1 {
@@ -252,7 +253,7 @@ color: #777777;
     text-align: center;
 }
 
-.left-container ul li a { /* font control for left-side nav column about, full blog, contact */
+.left-container ul li a {      /* font control for left-side nav column about, full blog, contact */
     color: #777777;
     text-decoration: none;
     font-size:28px;
@@ -263,10 +264,10 @@ color: #777777;
 }
 
 .left-container a{     /* left container anchor rules here */
-	font-size: 21px; 
+  font-size: 21px; 
   color: white;
-	padding 10px 0; /* padding for white line */
-	border-bottom: 1px solid #444; /*adds white line under each ul item--#444 is colour of line */
+  padding 10px 0; /* padding for white line */
+/* border-bottom: 1px solid #444; adds line under each ul item--#444 is colour of line */
 }
 
  .left-container--home {
