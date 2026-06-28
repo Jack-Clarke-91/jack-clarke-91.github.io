@@ -74,6 +74,9 @@ color: #777777;
 .post h3 {
   margin: 20px 0 6px;
 }
+.post h3 + p {
+    margin-top: 0;
+}
 
 
 .intro-line.contact{    /* intro header for about me section */
