@@ -398,6 +398,11 @@ width: 34px;
        object-fit: fill;
        border-radius:12px
        }
+
+.small-video {
+    width: 400px;
+    height: auto;
+}
 /*
 .scroll-text {
   font-size: 32px;
