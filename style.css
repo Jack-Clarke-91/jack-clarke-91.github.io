@@ -516,6 +516,14 @@ width: 34px;
 
 @media (max-width: 768px) {
 
+	/* extends the dotted pattern to the whole page on mobile,
+     since .hero-space no longer stretches to 100vh here and can
+     leave a plain black gap below it on shorter pages */
+body {
+    background-image: radial-gradient(#191919 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
   .left-container {
     width: 100%;
     height: auto;
