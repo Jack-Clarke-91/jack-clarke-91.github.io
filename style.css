@@ -519,7 +519,11 @@ width: 34px;
 	/* extends the dotted pattern to the whole page on mobile,
      since .hero-space no longer stretches to 100vh here and can
      leave a plain black gap below it on shorter pages */
-body {
+
+	body {
+    background-image: radial-gradient(#191919 1px, transparent 1px);
+    background-size: 20px 20px;
+	background-color: #141414; /* NEW: matches .hero-space's color exactly so the seam between them disappears */
     background-image: radial-gradient(#191919 1px, transparent 1px);
     background-size: 20px 20px;
   }
@@ -536,6 +540,7 @@ body {
     padding: 12px 16px;
     border-bottom: 1px solid #333;
     box-sizing: border-box;
+	background-color: #131313; /* NEW: solid fill so body's dots don't show through behind the nav bar */
   }
 
   .left-container ul {
