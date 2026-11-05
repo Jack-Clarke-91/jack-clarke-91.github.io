@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -25,9 +24,8 @@ body {
 }
 
 .intro-line {  			 /* home page intro */
-    /*font-family: Arial, sans-serif;*/
-	font-family: 'IBM Plex Mono', monospace;
-    position: relative; /* ensures it layers over .hero-space */
+    font-family: Arial, sans-serif;
+	position: relative; /* ensures it layers over .hero-space */
     text-align: centre;    
 	margin-top: 12vh; 
 	left: 5%; /* increases left margin size by 5% */
